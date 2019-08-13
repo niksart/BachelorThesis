@@ -1,0 +1,4250 @@
+[
+  {
+    "text_sentence": "My 7 year old daughter has developed a dime sized \"knot\" under her nipple today.",
+    "tokens_for_pred": [
+      "knot",
+      "k nipple"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 10 year old Grand Son has a very large knot in his arm pit.",
+    "tokens_for_pred": [
+      "large knot arm pit",
+      "knot arm"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 8 yr old has been having burning palms of his hands and feet for almost a year.",
+    "tokens_for_pred": [
+      "burn palm hand",
+      "feet",
+      "burn palm hand",
+      "burn palm",
+      "burn palm hand",
+      "feet year foot"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 3,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I'm thirteen and have multiple lumps in each breast.",
+    "tokens_for_pred": [
+      "multiple lump breast",
+      "multiple lump breast"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 12 year old son has been vomiting last night and he was with diarrhea , and a fever  of 39.0c.",
+    "tokens_for_pred": [
+      "diarrhea ",
+      "and fever c"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "About two days later his testical swelled up.",
+    "tokens_for_pred": [
+      "swell"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "My 2 year old little girl has been getting up at night and projectile vomiting, at least once a night, her fever has reached 100, and she is listless.",
+    "tokens_for_pred": [
+      "night",
+      "projectile vomit"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 2
+  },
+  {
+    "text_sentence": "She has a runny nose and complains of stomach pains during the day, she feels a little hot, but not with a bad fever, but at night it all gets worse...",
+    "tokens_for_pred": [
+      "runny nose",
+      "complain stomach pain",
+      "feel little hot ",
+      "but bad fever nose",
+      "feel little hot ",
+      "but bad fever stomach"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 8 month old daughter has always gotten phlegm in throat when she drinks anything and everything.",
+    "tokens_for_pred": [
+      "drink and",
+      "phlegm throat"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Her fever typically reach over 104 and last anywhere from 3 days to almost a week.",
+    "tokens_for_pred": [
+      "fever reach",
+      "last day week"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 4 1/2 year old son has been complaining of stomach pain for the past month or so.",
+    "tokens_for_pred": [
+      "stomach pain",
+      "stomach pain stomach"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 6 weeks old daughter has a cough with phlegm.",
+    "tokens_for_pred": [
+      "phlegm"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "My 8-year-old daughter has been complaining of back pain for about 3 years.",
+    "tokens_for_pred": [
+      "back pain",
+      "pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have swimmers ear, and my jaw also hurts on that side.",
+    "tokens_for_pred": [
+      "swimmer ear ",
+      "and jaw hurt side",
+      "hurt jaw",
+      "hurt ear"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Hi i am very worried about my 3 year old son he has frequent nosebleeds.",
+    "tokens_for_pred": [
+      "am worried year old",
+      "n has frequent nosebleeds"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My son is 2 1/2 and I noticed the other day that he has a small lump on the back left side of his neck.",
+    "tokens_for_pred": [
+      "has small lump back left side neck .",
+      "has small lump back left side neck",
+      "has small lump back left side neck back",
+      "left side neck lump"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Two days ago they all got a fever around 101 deg.",
+    "tokens_for_pred": [
+      "fever"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The next day they started getting small bumps on their cheeks.",
+    "tokens_for_pred": [
+      "small bump",
+      "bump cheek"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Today they woke up and the bumps were on their faces and necks.",
+    "tokens_for_pred": [
+      "face",
+      "neck"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 2
+  },
+  {
+    "text_sentence": "my son has had stomach pain for the last 3 days and the pain only occurs at night and lasts about 4 hours.",
+    "tokens_for_pred": [
+      "stomach pain",
+      "pain stomach"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My son's right knee became swollen (size of small baseball) 2 weeks ago and started limping.",
+    "tokens_for_pred": [
+      "swollen ( size small baseball ) week",
+      "start limp",
+      "swollen ( size small baseball ) week",
+      "start limp knee"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "My 5 year old daughter has crotch pain (no itching) in her vaginal area and her anus.",
+    "tokens_for_pred": [
+      "crotch pain ( itch ) vaginal area",
+      "anus",
+      "crotch pain anus"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "my daughter had red eyes, then a fever now rash on her skin and she coughs often.",
+    "tokens_for_pred": [
+      "rash skin",
+      "cough",
+      "rash skin",
+      "cough eye",
+      "rash skin"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 2,
+    "missing_tokens": 2
+  },
+  {
+    "text_sentence": "When she woke up she had a stomach ache and was in the bathroom for a long time.",
+    "tokens_for_pred": [
+      "stomach ach",
+      "stomach ach stomach"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "5 year old day 5 of fever keeps going up to 103.8 and once to 104.",
+    "tokens_for_pred": [
+      "year old day fever keep go and"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "This weekend my baby developed a sort of rash on his face and neck.",
+    "tokens_for_pred": [
+      "face",
+      "neck",
+      "rash face",
+      "rash neck"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "He has a swollen abdomen, fever, raspy coughing.",
+    "tokens_for_pred": [
+      "swollen abdomen ",
+      "fever ",
+      "raspy cough",
+      "swollen abdomen"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "my 9yr old has been suffering with bouts of vomiting every 2-3 weeks.",
+    "tokens_for_pred": [
+      "bout vomit"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "She always gets stomach cramps before this and there is no food pattern preceding it.",
+    "tokens_for_pred": [
+      "food pattern",
+      "food pattern stomach"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "My daughter who is nine years old is having severe pain in her back.",
+    "tokens_for_pred": [
+      "sever pain",
+      "sever pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 15 year-old daughter awoke this morning with small swollen glands directly beneath each ear, right next to her jaw.",
+    "tokens_for_pred": [
+      "small swollen gland ear ",
+      "jaw .",
+      "small swollen gland ear jaw",
+      "small swollen gland ear"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I noticed a small lump on my son's neck when he was 6 months old.",
+    "tokens_for_pred": [
+      "noticed small lump",
+      "n neck",
+      "small lump neck",
+      "son neck lump"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 11 month old daughter has had fevers on and off for almost a week now.",
+    "tokens_for_pred": [
+      "fever",
+      "week ."
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "She's also had diarrhea on and off for a couple weeks.",
+    "tokens_for_pred": [
+      "diarrhea",
+      "couple week"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Last night while bathing my 2 month old daughter, we noticed a fairly large raised area on her head.",
+    "tokens_for_pred": [
+      "bath month old daughter",
+      "large rais area head"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My son is complaining of chest pains and stomach discomfort, with diarrhea and headache.",
+    "tokens_for_pred": [
+      "chest pain",
+      "stomach discomfort",
+      "chest pain",
+      "stomach discomfort chest",
+      "discomfort stomach"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 2,
+    "missing_tokens": 2
+  },
+  {
+    "text_sentence": "My son is experiencing pain from his hip.",
+    "tokens_for_pred": [
+      "pain hip",
+      "pain hip"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "my daughter has had recurrent and severe headaches for the last two years.",
+    "tokens_for_pred": [
+      "recurrent",
+      "sever headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My four-year-old son has been complaining of a headache and mouth pain, particularily in the back of his mouth all week.",
+    "tokens_for_pred": [
+      "headache",
+      "mouth pain",
+      "mouth",
+      "back"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "He has also had fever several nights this week.",
+    "tokens_for_pred": [
+      "fever"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The headache comes and goes throughout the day.",
+    "tokens_for_pred": [
+      "headache"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My daughter six years old is with diarrhea and fever (37,5 to 39) for 5 days now.",
+    "tokens_for_pred": [
+      "diarrhea",
+      "fever"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "He was complaining of an upset stomach, and headache.",
+    "tokens_for_pred": [
+      "upset stomach ",
+      "and headache",
+      "upset stomach"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My eight year old was diagnosed with strep throat.",
+    "tokens_for_pred": [
+      "strep throat",
+      "strep throat"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 11month old has sores on her buttock and hips that look like ringworm.",
+    "tokens_for_pred": [
+      "buttock",
+      "hip",
+      "sore buttock",
+      "hip look ringworm butt"
+    ],
+
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Went back to ER as he was in terrible pain in abdomen.",
+    "tokens_for_pred": [
+      "terrible pain abdomen",
+      "terrible pain back",
+      "terrible pain abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've been seeing flashing lights now for about a week, it only happens when I touch my eye.",
+    "tokens_for_pred": [
+      "flash light",
+      "flash light eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Three weeks ago his eye started to bleed.",
+    "tokens_for_pred": [
+      "bleed",
+      "bleed eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Just moments ago, I experienced sudden blurred vision in my left eye.",
+    "tokens_for_pred": [
+      "sudden blur vision left eye",
+      "blur vision eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "About a week ago I started experiencing ear aches that would almost take me to my knee's.",
+    "tokens_for_pred": [
+      "ear ach",
+      "take knee ear",
+      "ear ach knee"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have no pains in my neck.",
+    "tokens_for_pred": [
+      "pain neck",
+      "pain neck"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My son aged 4 years is known to have complete loss of vision in his left eye due to poor optic nerve.",
+    "tokens_for_pred": [
+      "complete loss vision left eye poor optic nerve",
+      "poor optic nerve eye"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Since 3 days I can feel something in my left eye.",
+    "tokens_for_pred": [
+      "left eye",
+      "left eye eye"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "When I press the eye ball i can feel the pain.",
+    "tokens_for_pred": [
+      "eye ball can feel pain",
+      "pain eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My eyes recently have been extremely dry and sensitive to light.",
+    "tokens_for_pred": [
+      "dri",
+      "sensitive light",
+      "dri",
+      "sensitive light eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "About five days ago I woke up with a red left eye and swollen eyelids.",
+    "tokens_for_pred": [
+      "red left eye",
+      "swollen eyelid",
+      "swollen eyelid eye",
+      "red left eye",
+      "swollen eyelid"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 3,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've also been having mucosy discharge from eye since then that has matted my eyelids together in the morning.",
+    "tokens_for_pred": [
+      "mat eyelid",
+      "mat eyelid eye",
+      "mat eyelid"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I woke up two days ago with redness in my right eye.",
+    "tokens_for_pred": [
+      "red right eye",
+      "red eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I am a 20 year old male experiencing eye pain and occasional headaches.",
+    "tokens_for_pred": [
+      "eye pain",
+      "occasion headaches",
+      "eye pain eye"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My name is Juli and I have been suffering from dry eyes for a long time.",
+    "tokens_for_pred": [
+      "dri eye",
+      "suffer eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "It began when i started to have dizziness and headache 3 years ago.",
+    "tokens_for_pred": [
+      "dizziness",
+      "headache"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My left eye waters almost continuously.",
+    "tokens_for_pred": [
+      "left eye water",
+      "left eye water eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I believe the water is causing my vision to be blurry.",
+    "tokens_for_pred": [
+      "believe water is causing vision be blurry"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My nose is started getting cold and my left teeth were very sensitive to cold.",
+    "tokens_for_pred": [
+      "nose is start get cold",
+      "left teeth were sensitive cold",
+      "get cold nose",
+      "sensitive cold tooth"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had a twitch in my eye for three months now.",
+    "tokens_for_pred": [
+      "twitch",
+      "twitch eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I also have a constant pressure behind my eye as well as pain when i squeeze my eyes.",
+    "tokens_for_pred": [
+      "constant pressure eye pain",
+      "constant pressure eye"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Last night I had a sudden and intense pain behind my left eye.",
+    "tokens_for_pred": [
+      "sudden",
+      "intense pain",
+      "intense pain eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "It burned somewhat and my eye watered quite a bit but then as sudden as it had came, it went away.",
+    "tokens_for_pred": [
+      "burn",
+      "eye",
+      "water bit eye"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "My symptoms now are: severly dry eyes in the morning, terrible light sensitivity.",
+    "tokens_for_pred": [
+      "dri eye morn ",
+      "terrible light sensitivity",
+      "terrible light sensitivity eye"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I feel disoriented and my eyes feel very strained, tired and heavy after 2 hours of continuous use on one task.",
+    "tokens_for_pred": [
+      "strain ",
+      "tire",
+      "heavy",
+      "strain ",
+      "tire",
+      "heavy eye"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I occasionally feel sharp pain in the back of my eye and I have headaches in the back of my head and temples.",
+    "tokens_for_pred": [
+      "head",
+      "temples",
+      "headaches head",
+      "headaches temple",
+      "sharp pain eye",
+      "sharp pain back"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've had swelling on my upper eyelid of my left eye, and there's some pain on the left side of my eye as well.",
+    "tokens_for_pred": [
+      "swell upper eyelid left eye",
+      "swell eye",
+      "ve had swell upper eyelid left eye eyelid"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "About four days ago I started having pain in one of my eyes.",
+    "tokens_for_pred": [
+      "pain eye",
+      "pain eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Over the last few months I have started to notice that my left eye becomes red and bloodshot after prolong use of the computer.",
+    "tokens_for_pred": [
+      "red",
+      "bloodshot"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "On cold windy days my left eye always start to tear up.",
+    "tokens_for_pred": [
+      "cold windy day left eye start tear",
+      "tear eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Now I get a throbbing pain in the corner of my eye up my bridge of my nose and forehead, I have a fever and real bad headaches.",
+    "tokens_for_pred": [
+      "fever",
+      "real bad headaches",
+      "fever",
+      "real bad headaches forehead",
+      "bridge nose",
+      "forehead eye",
+      "fever",
+      "real bad headaches nose"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 3,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I also have a mucus laden cough, runny nose.",
+    "tokens_for_pred": [
+      "mucus laden cough ",
+      "runny nose",
+      "mucus laden cough nose",
+      "cough mucus"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 5 year old son woke up with redness in his eyes.",
+    "tokens_for_pred": [
+      "red",
+      "red eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have something wrong with my top left eyelid it is swollen.",
+    "tokens_for_pred": [
+      "wrong top left eyelid is swollen",
+      "swollen eyelid"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have noticed a white spot in my vision lately.",
+    "tokens_for_pred": [
+      "white"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I'm 17, and for the past two years I've noticed that i have been getting a lot of mucous in my eyes.",
+    "tokens_for_pred": [
+      "mucous eye",
+      "mucous eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I recently experienced sudden temporary double vision.",
+    "tokens_for_pred": [
+      "sudden temporary double vision"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Both eyes seem to have small cuts at the corners and they are both red.",
+    "tokens_for_pred": [
+      "small cut corner",
+      "are red",
+      "have small cut corner",
+      "are red eye"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "For the past few days, my left eye has been \"tearing\".",
+    "tokens_for_pred": [
+      "tear",
+      "tear eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "When I lay in bed in the morning my eyesight is blurry.",
+    "tokens_for_pred": [
+      "blurry"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I have noticed that for a whole month now my left eye has twitched non stop.",
+    "tokens_for_pred": [
+      "twitch stop",
+      "twitch stop eye"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "My vision is distorted.",
+    "tokens_for_pred": [
+      "distort"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I've had almost constant pain in my eyes especially my right eye.",
+    "tokens_for_pred": [
+      "constant pain eye right eye",
+      "constant pain eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My left eye has a small lump too in the same spot.",
+    "tokens_for_pred": [
+      "left eye has small lump same spot .",
+      "left eye has small lump same spot eye",
+      "left eye lump"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My eyes get teary so easily when I start to laugh, even a soft laugh.",
+    "tokens_for_pred": [
+      "soft laugh",
+      "get teary start laugh ",
+      "soft laugh eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My eyes hurt all of the time.",
+    "tokens_for_pred": [
+      "hurt time",
+      "hurt time eye"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I have been having right eye pain in the corner of the eye.",
+    "tokens_for_pred": [
+      "right eye pain",
+      "right eye pain eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The next morning there was redness in the white part of eye and it was obvious that it was hit.",
+    "tokens_for_pred": [
+      "red white part eye",
+      "red eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have full dry eye on both eyes.",
+    "tokens_for_pred": [
+      "full dri eye",
+      "dri eye eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have been experiencing at least once a week this dull pain around and mostly at the center of the chest since about 6 - 8 months.",
+    "tokens_for_pred": [
+      "dull pain",
+      "center chest",
+      "dull pain chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "When it began I also experienced fast heart beats  during nights.",
+    "tokens_for_pred": [
+      "fast heart beat",
+      "beat heart"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Few times I observed this pain on the back.",
+    "tokens_for_pred": [
+      "pain back",
+      "pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have the shakes and sweats with this and a horrible jelly like mucus that I cough up.",
+    "tokens_for_pred": [
+      "shake",
+      "sweat",
+      "horrible jelly mucus cough mucus"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I do not go dizzy or lightheaded.",
+    "tokens_for_pred": [
+      "dizzy",
+      "lightheaded"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Recently I visited an immediate care facility due to heavy wheezing and 15% lung capacity due to severe bronchitis symptoms.",
+    "tokens_for_pred": [
+      "sever bronchitis",
+      "sever bronchitis symptom lung"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "For the past three months or so, I have had chest pains on the left side of the chest.",
+    "tokens_for_pred": [
+      "chest pain left side chest",
+      "left side chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've been having strange chest pains for the past month or so.",
+    "tokens_for_pred": [
+      "strang chest pain",
+      "strang chest pain chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I felt burning in the left side of my chest that would not go away for about ten minutes.",
+    "tokens_for_pred": [
+      "burn left side chest",
+      "burn chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "For the next week or so, I began to have chest pains and also pain in my upper arms.",
+    "tokens_for_pred": [
+      "chest pain",
+      "pain upper arm",
+      "pain arm",
+      "pain chest"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have also had pain in the forearms, at the elbow joints, and throbbing or numbness in the hands.",
+    "tokens_for_pred": [
+      "pain forearm ",
+      "elbow joint ",
+      "and throb",
+      "numb",
+      "pain forearm",
+      "joint elbow",
+      "throb",
+      "numb hand"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 5,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "After about a week of this, I laid down to go to sleep one night and had chest pains and shooting pains in my left upper arm.",
+    "tokens_for_pred": [
+      "chest pain",
+      "shoot pain",
+      "shoot pain arm",
+      "chest pain",
+      "shoot pain chest"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "She's had chest pain (occational pressure too) in her chest that increases in severity when she breathes.",
+    "tokens_for_pred": [
+      "increases sever",
+      "increases sever chest"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I have a stabbing pain under both ribs, the classic costo pain on my sternum.",
+    "tokens_for_pred": [
+      "stab pain rib ",
+      "classic costo pain sternum",
+      "costo pain sternum",
+      "stab pain rib"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 3,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I was sleeping and suddenly I felt that I am out of breath and not getting enough air in my lungs.",
+    "tokens_for_pred": [
+      "am breath",
+      "get enough air lung",
+      "get enough air lung"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "After six months or so again, I had the similar attack early in the morning, with chest tightness and breathing difficulty.",
+    "tokens_for_pred": [
+      "chest tight",
+      "breath difficulty",
+      "tight chest"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "After three four months again I had the similar attack and this attack lasted few day with chest tightness and excessive difficulty in breathing.",
+    "tokens_for_pred": [
+      "chest tight",
+      "excess difficulty breath",
+      "tight",
+      "excess difficulty breath chest"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "In late November I started to get a pain in the right side of my chest just below my rib cage.",
+    "tokens_for_pred": [
+      "rib cage",
+      "rib cage chest",
+      "pain right side chest rib cage rib"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I was short of breath and could only sleep on one side of my body.",
+    "tokens_for_pred": [
+      "short breath",
+      "could sleep side body"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Sharp pains while breathing and shortness of breath continued.",
+    "tokens_for_pred": [
+      "breath",
+      "short breath"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I have had trouble with my throat swelling, it shuts sometimes when eating and I can not even swollow liquids.",
+    "tokens_for_pred": [
+      "eat",
+      "can swollow liquid",
+      "shut eat",
+      "can swollow liquid throat"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 4,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I sometimes get the feeling that I can't catch my breath and have to yawn or stretch to get a deep, filling breath.",
+    "tokens_for_pred": [
+      "yawn",
+      "stretch get deep ",
+      "fill breath"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "My other symptoms are headaches, earaches, sneezing, occasional cough (can't get the mucus to come up), post nasal drip and recently I've been getting dizzy when I lie down.",
+    "tokens_for_pred": [
+      "headaches ",
+      "earaches ",
+      "sneezing ",
+      "occasion cough",
+      "come mucus"
+    ],
+    "correct_tokens": 4,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 2
+  },
+  {
+    "text_sentence": "I also get palpitations that seem to be getting worse lately.",
+    "tokens_for_pred": [
+      "get palpitations seem be get worse"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had a cough that is getting worse everyday.",
+    "tokens_for_pred": [
+      "get worse everyday"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "Recently 2 weeks back I got right side upper chest pain and inflammation.",
+    "tokens_for_pred": [
+      "right side upper chest pain",
+      "inflammation",
+      "right side upper chest pain chest",
+      "right side upper chest pain",
+      "inflammation back"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have experienced random, sharp chest pains that seem to come from the left side of my chest.",
+    "tokens_for_pred": [
+      "random ",
+      "sharp chest pain",
+      "sharp chest pain chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I experienced left shoulder pain along with pain under my sternum.",
+    "tokens_for_pred": [
+      "left shoulder pain",
+      "pain shoulder",
+      "pain sternum"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had a sharp pain in my right rib cage area,  in the back.",
+    "tokens_for_pred": [
+      "sharp pain",
+      "sharp pain rib",
+      "sharp pain back"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "In the last two months I have started coughing blood first in the morning.",
+    "tokens_for_pred": [
+      "cough blood",
+      "cough blood"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had a weird cough for about 2 months now, more of a dry hack, a single cough, caused by a constant tickle in the back of my throat.",
+    "tokens_for_pred": [
+      "constant tickle back throat",
+      "tickle throat",
+      "constant tickle back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I do have a bit of a tight throat.",
+    "tokens_for_pred": [
+      "bit tight throat",
+      "bit tight throat throat"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "At the end of September I've started to experience pain in the left side of the chest around heart.",
+    "tokens_for_pred": [
+      "experience pain left side chest heart",
+      "heart chest",
+      "experience pain heart"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My lungs felt kind of heavy and I've started to cough out white mucus.",
+    "tokens_for_pred": [
+      "lung felt heavy",
+      "' ve start cough white mucus",
+      "heavy lung",
+      "cough mucus"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I am feeling tightness or discomfort in my chest when I breath.",
+    "tokens_for_pred": [
+      "feel tight",
+      "discomfort chest",
+      "feel tight",
+      "discomfort chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have been getting more and more sharp pain in my chest, generally in the left side of my chest, over the last few months.",
+    "tokens_for_pred": [
+      "get more",
+      "sharp pain chest",
+      "more",
+      "sharp pain chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "A few weeks ago I was rushed into hospital with severe pains in chest and in the back and vomiting.",
+    "tokens_for_pred": [
+      "sever pain chest",
+      "back",
+      "vomit",
+      "sever pain chest",
+      "vomit back"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "Yesterday I had an extreme bad nosebleed.",
+    "tokens_for_pred": [
+      "extreme bad nosebleed"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I feel like I am being choked inside throat.",
+    "tokens_for_pred": [
+      "choke throat",
+      "choke throat"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I was watching television and all of a sudden I had a sharp jolting pain in my upper left part of my chest.",
+    "tokens_for_pred": [
+      "sharp jolt pain upper left part chest",
+      "sharp jolt pain chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "This time it was followed by dizziness, sweating, nausea, tingling hands and anxiety.",
+    "tokens_for_pred": [
+      "dizziness ",
+      "sweat ",
+      "nausea ",
+      "tingling hand",
+      "anxiety",
+      "tingling hand"
+    ],
+    "correct_tokens": 5,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've had a pain in my right chest since last April.",
+    "tokens_for_pred": [
+      "pain right chest",
+      "pain chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I started to get a pain in my lower right abdomen.",
+    "tokens_for_pred": [
+      "pain lower right abdomen",
+      "pain abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I am having a lot of tightness in the chest in area over my heart.",
+    "tokens_for_pred": [
+      "tight chest area heart",
+      "tight chest area heart chest",
+      "tight heart"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "About a month ago I noticed that my neck was abnormally stiff and my lung capacity seemed reduced somewhat.",
+    "tokens_for_pred": [
+      "stiff",
+      "lung capacity seem reduced",
+      "stiff",
+      "lung capacity seem reduced neck",
+      "reduced lung"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "My neck seemed somewhat swollen mostly on the lower right side though the left side may have been a little swollen to.",
+    "tokens_for_pred": [
+      "neck seem swollen lower right side",
+      "swollen neck"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I was having some mild pain behind my ears and in my jaw.",
+    "tokens_for_pred": [
+      "mild pain ear",
+      "jaw",
+      "mild pain jaw",
+      "mild pain ear"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Oddly enough, though I don't think it was related, my left top eyelid was twitching uncontrollably for 2 weeks leading up to me going to the doctor.",
+    "tokens_for_pred": [
+      "twitch week lead go doctor .",
+      "twitch week lead go doctor eyelid"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "However, I had no other symptoms like a sore throat or cough that would suggest a cold.",
+    "tokens_for_pred": [
+      "sore throat",
+      "cough",
+      "cold throat"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I only have occassional ear pain.",
+    "tokens_for_pred": [
+      "occassional ear pain",
+      "occassional ear pain ear"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I'm still having discomfort that won't go away in my left chest area.",
+    "tokens_for_pred": [
+      "discomfort wo go left chest area",
+      "discomfort chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I quit just over a year ago and have had headaches ever since.",
+    "tokens_for_pred": [
+      "headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "She claims that since that day, she will get headaches and facial pain.",
+    "tokens_for_pred": [
+      "headaches",
+      "facial pain"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "It causes me to feel physically ill: headache, nausea, and I even got lightheaded and dizzy pretty much out of the blue earlier today.",
+    "tokens_for_pred": [
+      "headache ",
+      "nausea"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 2
+  },
+  {
+    "text_sentence": "I keep getting headaches daily.",
+    "tokens_for_pred": [
+      "headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Of late, after 2 drinks the back of my head (right only) starts hurting.",
+    "tokens_for_pred": [
+      "drink back head ( ) start hurt",
+      "hurt head",
+      "hurt back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 46 yr. old husband went to our GP yesterday for extreme pain in the back of his neck (radiates from between his shoulders to the base of his skull) and severe lightheadedness.",
+    "tokens_for_pred": [
+      "sever lightheadedness",
+      "radiates shoulder base skull",
+      "radiates shoulder base skull neck",
+      "radiates shoulder base skull shoulder",
+      "radiates shoulder base skull back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 4,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "For over 5 months now I have had headaches varying in severity.",
+    "tokens_for_pred": [
+      "headaches varying sever"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "They started one say with a sharp stabbing pain in the back of my head, i went dizzy and lightheaded.",
+    "tokens_for_pred": [
+      "dizzy",
+      "lightheaded",
+      "sharp stab pain head",
+      "sharp stab pain back"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "With this i have also noticed my eyes redden some times, like quite bloodshot, but also i have unequal pupils, my right side is bigger than the left, don't think this is all the time.",
+    "tokens_for_pred": [
+      "right side is bigger left",
+      "bloodshot eye",
+      "right side is bigger left pupil"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had what feels like pain at the top of my head.",
+    "tokens_for_pred": [
+      "pain top head",
+      "pain head"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Recently my fiance has been complaining of severe headaches and nausea.",
+    "tokens_for_pred": [
+      "sever headaches",
+      "nausea"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "About two nights ago he was running a high fever.",
+    "tokens_for_pred": [
+      "high fever"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I suddenly had a terrible headache on the left part of my head.",
+    "tokens_for_pred": [
+      "terrible headache",
+      "headache head"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I was recently sick with the flu and since then have been having this pain in my right temple.",
+    "tokens_for_pred": [
+      "sick flu",
+      "have been have pain right temple",
+      "sick temple"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I would like to know why I have these constant headaches without explanation.",
+    "tokens_for_pred": [
+      "constant headaches explanation"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have recently been hospitalised with servere headaches and blurred vision.",
+    "tokens_for_pred": [
+      "server headaches",
+      "blur vision"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have also slight loss of motivation, stiff neck and dizziness when i stand up.",
+    "tokens_for_pred": [
+      "slight loss motivation ",
+      "stiff neck",
+      "dizziness",
+      "stiff neck"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've had a headache since mid-August of 2009.",
+    "tokens_for_pred": [
+      "headache"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Sometimes the headache feels like someone is pushing as hard as they can on both sides of my head.",
+    "tokens_for_pred": [
+      "can side head",
+      "hard head"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "Yesterday I had a headache and nausea.",
+    "tokens_for_pred": [
+      "headache",
+      "nausea"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My 10 year old daughter has been suffering from a severe headache in the front region of her head for the past 4 days.",
+    "tokens_for_pred": [
+      "sever headache",
+      "headache head",
+      "headache forehead"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I had a migrain headache with the usual side affects: vomiting, dizziness, sharp pains in my eyes.",
+    "tokens_for_pred": [
+      "vomit ",
+      "dizziness ",
+      "sharp pain",
+      "vomit ",
+      "dizziness ",
+      "sharp pain eye"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 3,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have very slight headaches that i constantly feel everyday.",
+    "tokens_for_pred": [
+      "slight headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have a low grade fever of 99.8 and I am extremely drowsy.",
+    "tokens_for_pred": [
+      "low grade fever",
+      "am drowsy"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "However I am becoming very concerned with a tingling headache.",
+    "tokens_for_pred": [
+      "tingling headache"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The headache has become severe and tingling all over my head with extremely sore scalp at times.",
+    "tokens_for_pred": [
+      "sever",
+      "tingling",
+      "sore scalp head",
+      "sever",
+      "tingling head scalp"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I have headaches and dizziness with shivering hands.",
+    "tokens_for_pred": [
+      "headaches",
+      "dizziness",
+      "headaches",
+      "dizziness hand"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "After I get my migraine I will feel dizziness and nausea.",
+    "tokens_for_pred": [
+      "dizziness",
+      "nausea"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had headaches and dizziness for a little over three years.",
+    "tokens_for_pred": [
+      "headaches",
+      "dizziness"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I suffer from some sort of severe headache.",
+    "tokens_for_pred": [
+      "sever headache"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I went to the doctor a couple of years ago for headaches and because I was just feeling so tired.",
+    "tokens_for_pred": [
+      "headaches",
+      "was feel tire"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My wife has been having recent bouts of blurry vision and occasionally total blindness.",
+    "tokens_for_pred": [
+      "blurry vision",
+      "total blind"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "She had been having a headache for the last few days.",
+    "tokens_for_pred": [
+      "headache"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I recently got a call from her saying that she's getting fuzzy vision.",
+    "tokens_for_pred": [
+      "'s get fuzzy vision"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I am a 26 year old male that has suffered with dull headaches for over 10 years.",
+    "tokens_for_pred": [
+      "dull headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Here are the general symptoms: chest pain on both the left and right side, difficulty breathing and swallowing.",
+    "tokens_for_pred": [
+      "chest pain both left",
+      "right side ",
+      "difficulty breath",
+      "swallow",
+      "chest pain chest"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I also have severe headaches with throbbing and pain behind the right eye.",
+    "tokens_for_pred": [
+      "throb",
+      "pain",
+      "throb",
+      "pain eye"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I have been also having neck pain, dizziness and chills.",
+    "tokens_for_pred": [
+      "neck pain ",
+      "dizziness",
+      "chill",
+      "pain neck"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I'm 15 years old and since last week I've had a constant headache.",
+    "tokens_for_pred": [
+      "headache"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I was sitting down to eat and i got a very bad headache.",
+    "tokens_for_pred": [
+      "was sit eat",
+      "got bad headache"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've been having these sporadic sort of vibrating headaches for about a year now.",
+    "tokens_for_pred": [
+      "vibrating headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Since I was a kid, about 10 or so, I would expierence severe headaches.",
+    "tokens_for_pred": [
+      "sever headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "They always made me really dizzy, and I couldn't get rid of them.",
+    "tokens_for_pred": [
+      "made dizzy"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have always gotten major headaches around this time of year.",
+    "tokens_for_pred": [
+      "headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I been having headaches and dizziness.",
+    "tokens_for_pred": [
+      "headaches",
+      "dizziness"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "He was having a bowl movement and got a excruciating head pain.",
+    "tokens_for_pred": [
+      "excruciating head pain",
+      "excruciating head pain head"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "About a week ago, I started getting these severe headaches.",
+    "tokens_for_pred": [
+      "sever headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The first night that it happened, I was on my way to bed, got really dizzy.",
+    "tokens_for_pred": [
+      "was way bed ",
+      "got dizzy"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "When I got into bed, I shivered untill I fell asleep.",
+    "tokens_for_pred": [
+      "shiver fell asleep"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Lately for the past few weeks I've noticed the tip of my tongue goes numbfor seconds at a time, only while I'm speaking.",
+    "tokens_for_pred": [
+      "numbfor second",
+      "numbfor second time ",
+      "' m speak tongue"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I made a 4 hr flight in europe last week to the canary islands in spain on landing 24hrs later I had bad  earache and   loss of hearing .",
+    "tokens_for_pred": [
+      "bad earache",
+      "loss hear"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Had a fever for a night then had nasal congestion, sore throat.",
+    "tokens_for_pred": [
+      "nasal congestion ",
+      "sore throat",
+      "nasal congestion throat"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "A week afterwards I noticed my tongue turned yellow.",
+    "tokens_for_pred": [
+      "tongue turn",
+      "turn yellow tongue"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have blisters or sores in the back of my throat.",
+    "tokens_for_pred": [
+      "blister",
+      "sore",
+      "blister",
+      "sore throat",
+      "blister",
+      "sore back throat back"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 3,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I think I am starting to have a slight  loss of hearing  in my left ear.",
+    "tokens_for_pred": [
+      "slight loss hear left ear",
+      "slight loss hear left ear ear"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Immediately after the explosion I realized I had loss some hearing from that ear.",
+    "tokens_for_pred": [
+      "explosion"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I get hot flashes, sinus pressure, bleching and bloating and earaches like fullness in the ears from time to time.",
+    "tokens_for_pred": [
+      "hot flash ",
+      "sinus pressure ",
+      "bleching",
+      "bloat",
+      "earaches",
+      "full ear"
+    ],
+    "correct_tokens": 6,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Lately while listening to certain songs with high treble my eyes begin to water and I get some discomfort in my ears.",
+    "tokens_for_pred": [
+      "listen certain",
+      "ng high treble eye",
+      "high treble eye begin water",
+      "get discomfort ear eye",
+      "discomfort ear"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My ex is 50 years old and is coughing up blood a little bit in mucus and has happened three times in a row.",
+    "tokens_for_pred": [
+      "cough blood little bit mucus",
+      "cough blood",
+      "cough blood little bit mucus"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "A friend have a 4 years old daughter who lost hearing from one ear suddenly, she woke up in the morning completely deaf.",
+    "tokens_for_pred": [
+      "lost hear ear",
+      "deaf ear"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "When she was about 2 years old she lost hearing  from the other ear.",
+    "tokens_for_pred": [
+      "lost hear other ear",
+      "lost hear ear"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My hearing has been getting progressively more sensitive, and is driving me crazy.",
+    "tokens_for_pred": [
+      "drive crazy"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "My left ear feels clogged.",
+    "tokens_for_pred": [
+      "left ear",
+      "clog ear"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've been suffering from occasional voice loss for two months now.",
+    "tokens_for_pred": [
+      "occasion voice loss"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Over the past two days I noticed an irritating sensation in the back of my throat, as if there was something stuck.",
+    "tokens_for_pred": [
+      "irritating sensation back throat",
+      "was stuck throat",
+      "was stuck back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Went to sleep with a mild neck pain on the right side.",
+    "tokens_for_pred": [
+      "mild neck pain",
+      "mild neck pain neck"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Woke up with the same neck pain, plus a severe case of dizziness and slight loss of hearing.",
+    "tokens_for_pred": [
+      "dizziness",
+      "slight loss hear",
+      "dizziness",
+      "slight loss hear neck"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "Same symptoms with a more severe loss of hearing  and a numbness of the right-side of tongue and ear lobes.",
+    "tokens_for_pred": [
+      "sever loss hear",
+      "numb right - side tongue",
+      "ear lobe",
+      "sever loss hear tongue",
+      "sever loss hear ear"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "Has sudden attacks of a blocked right ear, followed by severe dizziness, which leads to severe vomiting and cold sweats.",
+    "tokens_for_pred": [
+      "sever vomit",
+      "cold sweat",
+      "sudden attack block right ear ",
+      "follow sever dizziness ear"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Recently I was taken to the ER with a severe pressure in my face and head  and dizziness.",
+    "tokens_for_pred": [
+      "face",
+      "head",
+      "dizziness",
+      "sever pressure head",
+      "sever pressure face"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I was short of breath and had some minimal chest pain.",
+    "tokens_for_pred": [
+      "short breath",
+      "had minimal chest pain",
+      "breath chest"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have a lump in my nose it is only about 1/2cm-1cm inside the nostril cavity.",
+    "tokens_for_pred": [
+      "have lump nose is / cm cm nostril cavity",
+      "cm nostril cavity nose",
+      "have lump nose is / cm cm nostril",
+      "cm nostril cavity lump"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 4,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I occasionally get blood noses.",
+    "tokens_for_pred": [
+      "get blood nose",
+      "get blood nose blood"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Added ontop over the past couple of months I have suffered from more headaches then normal, I am more tired, at night my nose goes numb.",
+    "tokens_for_pred": [
+      "more headaches normal ",
+      "am tire"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I woke up yesterday morning with the area under my right eye puffy and my eyelid a little puffy just right above my inner eye.",
+    "tokens_for_pred": [
+      "right eye puffy",
+      "eyelid",
+      "eyelid little puffy inner eye eye",
+      "inner eye eyelid"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Last night I discovered a lump in front of my ear on the same side of my face.",
+    "tokens_for_pred": [
+      "lump front ear same side face",
+      "ear face",
+      "ear same side face forehead",
+      "face ear",
+      "ear lump"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I started having sinus pressure in my head.",
+    "tokens_for_pred": [
+      "sinus pressure head",
+      "sinus pressure head"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have a currently found a lump on the left side of my neck, just below my ear.",
+    "tokens_for_pred": [
+      "left side neck ",
+      "ear",
+      "ear ear",
+      "ear neck",
+      "ear lump"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 4,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I have suffer from spontaneous nosebleed often.",
+    "tokens_for_pred": [
+      "spontaneous nosebleed"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "About 4 days ago I devolped this clicking and popping noise in my throat on the right side while swallowing.",
+    "tokens_for_pred": [
+      "click",
+      "pop noise throat right side swallow",
+      "swallow throat"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I had a slight sore throat last week and it has since went away.",
+    "tokens_for_pred": [
+      "slight",
+      "re throat last week",
+      "has went .",
+      "slight",
+      "re throat last week",
+      "has went throat"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 6,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I've had a headache across my forehead and in the spot where I hit it last week.",
+    "tokens_for_pred": [
+      "headache forehead",
+      "spot",
+      "headache forehead"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have sneezing fits randomly through the day and then it'll end up with a runny nose and itching eyes.",
+    "tokens_for_pred": [
+      "runny nose",
+      "itch eye",
+      "sneezing eye",
+      "sneezing nose"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I am trying to figure out what's causing my earache, fuzzy hearing, sensitivity to noise, and feeling of fullness and pressure inside my ear.",
+    "tokens_for_pred": [
+      "earache ",
+      "fuzzy hear ",
+      "sensitivity noise",
+      "feel full",
+      "pressure ear ear"
+    ],
+    "correct_tokens": 5,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The symptoms are similar to those of Meniere's, but I don't experience any extreme vertigo, just light dizziness at times.",
+    "tokens_for_pred": [
+      "do experience extreme vertigo ",
+      "light dizziness time"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've had a constant need to clear my throat and excessive phlegm in my throat.",
+    "tokens_for_pred": [
+      "clear throat",
+      "excess phlegm",
+      "excess phlegm throat"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Just recently I've also been experiencing really  thick, sticky saliva and a dry mouth, which makes it hard to swallow...",
+    "tokens_for_pred": [
+      "thick ",
+      "sticky saliva",
+      "dri mouth",
+      "hard swallow mouth",
+      "hard swallow saliva"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The back right side of my tongue feels sore when I swallow or move it around.",
+    "tokens_for_pred": [
+      "swallow",
+      "move",
+      "sore tongue",
+      "swallow",
+      "move back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 4,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Throat has been itching for awhile now and starting to hurt.",
+    "tokens_for_pred": [
+      "while",
+      "start hurt"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "Just feels like I have a sore throat.",
+    "tokens_for_pred": [
+      "sore throat",
+      "sore throat throat"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "She's been having nosebleeds  each night for the past 3 nights.",
+    "tokens_for_pred": [
+      "nosebleeds"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Full and runny nose and cough.",
+    "tokens_for_pred": [
+      "full",
+      "runny nose",
+      "cough",
+      "full",
+      "runny nose",
+      "cough nose"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I started geting a dull ache in my left ear and it hurt to touch.",
+    "tokens_for_pred": [
+      "dull ach left ear",
+      "hurt touch",
+      "hurt touch ear"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had a  for going on 8 months now.",
+    "tokens_for_pred": [
+      "have had go month ."
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I went to my doctor about a week ago because of lightheadedness, dizziness, headache, and eye twitching.",
+    "tokens_for_pred": [
+      "lightheadedness ",
+      "dizziness ",
+      "headache ",
+      "and eye twitch",
+      "twitch eye"
+    ],
+    "correct_tokens": 4,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My biggest problem now is fatigue, almost as if my head is so heavy.",
+    "tokens_for_pred": [
+      "fatigue",
+      "heavy head"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have a dry persistent cough  only in the morning for 5 to 10 min.",
+    "tokens_for_pred": [
+      "dri persist cough"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Several times a year I have a spot in the rear of my mouth that gets very sore.",
+    "tokens_for_pred": [
+      "spot rear mouth get",
+      "re .",
+      "get",
+      "re mouth"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I started getting sharp stabbing pains in my neck.",
+    "tokens_for_pred": [
+      "sharp stab pain",
+      "sharp stab pain neck"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Shortly afterwards the glands in my neck became swollen and I had frequent sore throats and fatigue.",
+    "tokens_for_pred": [
+      "frequent",
+      "re throat",
+      "fatigue",
+      "swollen neck"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 2
+  },
+  {
+    "text_sentence": "I awoke this morning with a both sharp and dull pain around my left shoulder, close to the spine.",
+    "tokens_for_pred": [
+      "sharp",
+      "dull pain",
+      "sharp",
+      "dull pain shoulder"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have just began to experience severe pains in my lower knee.",
+    "tokens_for_pred": [
+      "sever pain lower knee",
+      "sever pain knee"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "For 2 days now I've had stiffness in my neck.",
+    "tokens_for_pred": [
+      "stiff neck",
+      "stiff neck"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The pain begins as a dull, lasting sensation throughout the upper middle of my back but is not limited to this area.",
+    "tokens_for_pred": [
+      "last sensation upper middle back",
+      "last sensation back"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I now have severe chronic pain on both sides of my neck, across the base of my skull, along my shoulders and mid back.",
+    "tokens_for_pred": [
+      "sever chronic pain",
+      "shoulder",
+      "back skull",
+      "chronic pain neck",
+      "sever chronic pain side neck ",
+      "base skull shoulder",
+      "sever chronic pain back"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 2,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I have three hard bumps on the back of my neck in different areas.",
+    "tokens_for_pred": [
+      "hard bump",
+      "hard bump neck",
+      "hard bump back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Every morning I wake up with back pain so intense that I am unable to move for the first 10-15 minutes.",
+    "tokens_for_pred": [
+      "back pain"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have a lower back pain problem.",
+    "tokens_for_pred": [
+      "lower back pain problem",
+      "lower back pain problem back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Hello I was working out about a month and a half ago and my lower back started to accutely hurt.",
+    "tokens_for_pred": [
+      "month",
+      "half",
+      "lower back start hurt",
+      "hurt back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I suffer with bad back and shoulder pains.",
+    "tokens_for_pred": [
+      "bad back",
+      "shoulder pain",
+      "bad back shoulder",
+      "bad back",
+      "shoulder pain back"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "For about a year, I experienced back discomforts.",
+    "tokens_for_pred": [
+      "discomfort",
+      "discomfort back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Recently back from a flight ( 4 days ago ) where I had a terrible pain on my left buttocks.",
+    "tokens_for_pred": [
+      "terrible pain left buttock",
+      "terrible pain back",
+      "terrible pain butt"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Have had lower back, abdominal and left testicle pain for several months.",
+    "tokens_for_pred": [
+      "lower back ",
+      "abdominal",
+      "left testicle pain",
+      "abdominal",
+      "left testicle pain back",
+      "lower back abdomen",
+      "lower back ",
+      "abdominal",
+      "left testicle pain testis"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 8,
+    "redundant_tokens": 0,
+    "missing_tokens": 2,
+    "interesting": "yes"
+  },
+  {
+    "text_sentence": "When I lay down to sleep I get this stabbing sensation in the middle of my back.",
+    "tokens_for_pred": [
+      "sleep",
+      "stab sensation back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Pain is primarily in mid buttock.",
+    "tokens_for_pred": [
+      "pain",
+      "pain butt"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've been having lower back pain for over 2 years now.",
+    "tokens_for_pred": [
+      "lower back pain",
+      "lower back pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "One morning while driving I noticed a pain in my left shoulder blade.",
+    "tokens_for_pred": [
+      "drive noticed pain left shoulder blade",
+      "pain shoulder"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have, for the past 10 days, been experiencing pain across my mid back.",
+    "tokens_for_pred": [
+      "pain back",
+      "pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "We went over one bump and I got a piercing pain in my lower back.",
+    "tokens_for_pred": [
+      "piercing pain",
+      "piercing pain back",
+      "piercing pain lower back lump"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 1,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've been suffering from a pretty bad back pain now for 2 months.",
+    "tokens_for_pred": [
+      "bad back pain",
+      "suffer bad back pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I wake up every morning with a very stiff neck.",
+    "tokens_for_pred": [
+      "stiff neck",
+      "stiff neck"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have this pain and tenderness in my thoracic spine 6 months.",
+    "tokens_for_pred": [
+      "pain",
+      "tender"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 2
+  },
+  {
+    "text_sentence": "I have pain in my chest and under shoulder blades.",
+    "tokens_for_pred": [
+      "pain chest",
+      "shoulder blade",
+      "pain chest",
+      "shoulder blade shoulder",
+      "pain chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 2,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "For the past 2 months i have been getting a burning sensation pain in my lower back.",
+    "tokens_for_pred": [
+      "burn sensation pain lower back",
+      "burn sensation pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My neck and right shoulder was very painful.",
+    "tokens_for_pred": [
+      "neck",
+      "right shoulder",
+      "pain neck",
+      "pain shoulder"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "After doing a strength test evaluation again in Aug 09, I started to have lower back pain.",
+    "tokens_for_pred": [
+      "lower back pain",
+      "lower back pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have constant back, neck and knee pains and all of my joints click.",
+    "tokens_for_pred": [
+      "constant back ",
+      "neck",
+      "knee pain",
+      "joint click",
+      "constant back neck",
+      "neck",
+      "knee pain back",
+      "constant back ",
+      "neck",
+      "knee pain",
+      "joint click knee"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 8,
+    "redundant_tokens": 2,
+    "missing_tokens": 2,
+    "interesting": "yes"
+  },
+  {
+    "text_sentence": "My back gets sore and very painful.",
+    "tokens_for_pred": [
+      "sore",
+      "pain",
+      "pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Sometimes when I stand up or bend over I nearly fall over from dizziness and the feeling blood has rushed to my head.",
+    "tokens_for_pred": [
+      "dizziness",
+      "feel blood",
+      "stand",
+      "bend fall dizziness",
+      "feel blood head",
+      "rush head blood"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 5,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I first started to have back pain with the flu 2 months ago.",
+    "tokens_for_pred": [
+      "back pain",
+      "pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Could it be related to my headache and dizziness.",
+    "tokens_for_pred": [
+      "headache",
+      "dizziness"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I had severe heel pain on my left heel.",
+    "tokens_for_pred": [
+      "sever heel pain",
+      "sever heel pain heel"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Whenever I press my left shoulder blade I get a kind of sharp pain.",
+    "tokens_for_pred": [
+      "sharp pain",
+      "sharp pain shoulder"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My back started hurting when I was in 6th grade.",
+    "tokens_for_pred": [
+      "hurt",
+      "hurt back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I woke up in the middle of the night with a very stiff and sore back.",
+    "tokens_for_pred": [
+      "stiff",
+      "sore back",
+      "stiff",
+      "sore back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I've had back pain ranging from mild to severe for about a decade.",
+    "tokens_for_pred": [
+      "back pain",
+      "pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have been experiencing cronic pain along the right side of my lower back for the past four days.",
+    "tokens_for_pred": [
+      "cronic pain right side lower back past day",
+      "cronic pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I awoke yesterday to the worst back pain of my entire life.",
+    "tokens_for_pred": [
+      "worst back pain entire life",
+      "pain entire life back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had stiffness and pain in my right calf.",
+    "tokens_for_pred": [
+      "stiff",
+      "pain",
+      "stiff",
+      "pain calf"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had a burning pain between on my right lower rib for about 2 to 3 years.",
+    "tokens_for_pred": [
+      "burn pain",
+      "burn pain rib"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I fell again 2 weeks ago and was experiencing extreme lower back and knee pain.",
+    "tokens_for_pred": [
+      "extreme lower back",
+      "knee pain",
+      "knee pain back",
+      "extreme lower back knee"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The last several days I have awakened with severe dizziness.",
+    "tokens_for_pred": [
+      "sever dizziness"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have extreme pain on my left leg.",
+    "tokens_for_pred": [
+      "extreme pain left leg",
+      "extreme pain leg"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have been having severe back pain that has been radiating to my right leg.",
+    "tokens_for_pred": [
+      "sever back pain",
+      "sever back pain has been radiating right leg back",
+      "sever back pain leg"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "This back pain was fairly acute for the last 4-6 months.",
+    "tokens_for_pred": [
+      "back pain was acute",
+      "pain was acute back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have moderate pain in my mid back on my left.",
+    "tokens_for_pred": [
+      "moderate pain",
+      "moderate pain back"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "For the past few days I have had neck pain at the very base of my neck towards the left.",
+    "tokens_for_pred": [
+      "neck pain",
+      "neck pain neck"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "She is affected with vomiting happening all the day.",
+    "tokens_for_pred": [
+      "vomit"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "It feels like ther is something stuck in my throat a ways down on the right side.",
+    "tokens_for_pred": [
+      "stuck throat way right side",
+      "stuck throat way right side throat"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I noticed a really bad abdominal ache after drinking orange juice at first.",
+    "tokens_for_pred": [
+      "bad abdominal ach",
+      "drink orang juice abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I was having bouts of diarrhea and pain on my lower left quadrant.",
+    "tokens_for_pred": [
+      "diarrhea",
+      "pain"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "my son-in-law has a problem with diarrhea after eating anything.",
+    "tokens_for_pred": [
+      "diarrhea eat"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I had severe acid reflux for 7 yrs with no relief no matter what i took, prescription, otc ..nothing.",
+    "tokens_for_pred": [
+      "sever acid reflux"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Hi, during the past week I've had nausea and numbness most prevalent in the right side of my tongue.",
+    "tokens_for_pred": [
+      "nausea",
+      "numb",
+      "nausea tongue"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Within the past 6 months, I have been noticing a strange chest pain that has me concerned.",
+    "tokens_for_pred": [
+      "strang chest pain",
+      "strang chest pain chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "At varying distances during many of my runs, I will get a short, but sharp chest pain right in the middle of my chest.",
+    "tokens_for_pred": [
+      "sharp chest pain",
+      "sharp chest pain chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have been having nausea, at irregular times, sometimes lasting several hours.",
+    "tokens_for_pred": [
+      "nausea"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have chronic nausea.",
+    "tokens_for_pred": [
+      "chronic nausea"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Everytime I would eat I would become really nauseas.",
+    "tokens_for_pred": [
+      "eat would become nausea"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "On Tuesday I woke up at 4a.m with severe constant abdominal pains in the centre of my stomach.",
+    "tokens_for_pred": [
+      "sever constant abdominal pain"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "For the past few months I have been having nearly constant nausea.",
+    "tokens_for_pred": [
+      "constant nausea"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "At first I was vomiting a lot.",
+    "tokens_for_pred": [
+      "vomit"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Right away I felt a sharp, shooting pain in my upper right abdominal area that lasted for 20-30 seconds.",
+    "tokens_for_pred": [
+      "sharp ",
+      "shoot pain",
+      "shoot pain abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have had abdominal pain in my upper abdomen for the past 5-6 weeks.",
+    "tokens_for_pred": [
+      "abdominal pain",
+      "abdominal pain abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have excessive belching, especially after eating.",
+    "tokens_for_pred": [
+      "excess belch"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have flatulence, especially in the mornings after waking.",
+    "tokens_for_pred": [
+      "flatulence"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have abdominal pains, slight discomfort in stomach.",
+    "tokens_for_pred": [
+      "abdominal pain ",
+      "slight discomfort stomach",
+      "slight discomfort stomach abdomen",
+      "slight discomfort stomach"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have dizziness and lack of breathe.",
+    "tokens_for_pred": [
+      "dizziness",
+      "lack breath"
+    ],
+    "correct_tokens": 2,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have very frequent heartburn and I seem to have gas quite often and I feel bloated all the time.",
+    "tokens_for_pred": [
+      "heartburn",
+      "seem have gas",
+      "feel bloat time"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I woke up this morning with a migraine headache.",
+    "tokens_for_pred": [
+      "migraine headache"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I started get very bad abdominal pains nearly 10 years ago.",
+    "tokens_for_pred": [
+      "abdominal pain",
+      "bad abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I got a virus from my wife about 4 weeks ago and it caused me to get very weak, dizzy and nauseous for about a week.",
+    "tokens_for_pred": [
+      "weak ",
+      "dizzy",
+      "nauseous"
+    ],
+    "correct_tokens": 3,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I feel my heart beating faster.",
+    "tokens_for_pred": [
+      "heart beat",
+      "beat faster heart"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have very frequent headaches.",
+    "tokens_for_pred": [
+      "headaches"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Fullness in my upper abdomen (just below the bottom of sternum).",
+    "tokens_for_pred": [
+      "full",
+      "bottom sternum",
+      "bottom sternum abdomen",
+      "full upper abdomen ( bottom sternum butt"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 3,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Unusual burping (big burps).",
+    "tokens_for_pred": [
+      "Unusual burp"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Fatigue.",
+    "tokens_for_pred": [
+      "Fatigue"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I feel like there is something that's slightly stuck in my throat.",
+    "tokens_for_pred": [
+      "stuck throat",
+      "stuck throat"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "I have an increase in saliva, feel like I need to spit constantly.",
+    "tokens_for_pred": [
+      "increase saliva",
+      "spit saliva"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My Son has been having abdominal pains for a while.",
+    "tokens_for_pred": [
+      "abdominal pain",
+      "pain abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I'm nearly 18 and I have a small lump on my buttock.",
+    "tokens_for_pred": [
+      "small lump buttock",
+      "small lump butt",
+      "buttock lump"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I have pain in the lower left abdomen, right by the last rib.",
+    "tokens_for_pred": [
+      "pain lower left abdomen",
+      "pain lower left abdomen rib",
+      "pain abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 2,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I'm 21 years old and I can remember having problems with nausea since I was 10.",
+    "tokens_for_pred": [
+      "nausea"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "I am a 20 year old male and recently I noticed this pain in my lower left abdomen.",
+    "tokens_for_pred": [
+      "lower left abdomen",
+      "lower left abdomen"
+    ],
+    "correct_tokens": 0,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "Started July 2008 with pain whilst urinating or opening bowels, then chest pains.",
+    "tokens_for_pred": [
+      "pain urinating",
+      "open bowel",
+      "pain urinating",
+      "open bowel chest"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 2,
+    "redundant_tokens": 1,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "This past month I've been experiencing nausea on and off.",
+    "tokens_for_pred": [
+      "nausea and"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "My daughter who just turned 16 has bouts of morning vomiting for the past 3-5 years.",
+    "tokens_for_pred": [
+      "vomit"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "She would vomit early morning, immediately upon waking.",
+    "tokens_for_pred": [
+      "vomit"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "The indigestion subsided after about two weeks however the abdominal pain has worsened to the point where it is causing me a great deal of discomfort.",
+    "tokens_for_pred": [
+      "causing great deal discomfort",
+      "causing great deal discomfort abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 1,
+    "redundant_tokens": 0,
+    "missing_tokens": 1
+  },
+  {
+    "text_sentence": "For the past couple months, I have been experiencing all these symptoms, and they are continually worsening: pelvic pain in my lower right abdomen.",
+    "tokens_for_pred": [
+      "pelvic pain lower right abdomen",
+      "pelvic pain abdomen"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 1,
+    "missing_tokens": 0
+  },
+  {
+    "text_sentence": "Loss of appetite.",
+    "tokens_for_pred": [
+      "loss appetit"
+    ],
+    "correct_tokens": 1,
+    "wrong_tokens": 0,
+    "non_sense_tokens": 0,
+    "redundant_tokens": 0,
+    "missing_tokens": 0
+  }
+]

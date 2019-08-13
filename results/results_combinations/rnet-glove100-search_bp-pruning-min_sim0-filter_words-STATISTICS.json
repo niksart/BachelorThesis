@@ -1,0 +1,11 @@
+{
+  "number of non_redundant_correct_cuis": 255,
+  "number of redundant_correct_cuis": 65,
+  "number of wrong_cuis": 555,
+  "number of missed_cuis": 212,
+  "number of real_cuis": 467,
+  "number of prediction_cuis": 875,
+  "correct predictions / total predictions": 0.3657142857142857,
+  "accuracy (correct predictions / real cuis number)": 0.5460385438972163,
+  "attempts per real cui": 1.873661670235546
+}

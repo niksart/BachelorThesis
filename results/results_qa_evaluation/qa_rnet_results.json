@@ -1,0 +1,54 @@
+{
+  "correct_tokens": 427,
+  "wrong_tokens": 14,
+  "non_sense_tokens": 247,
+  "redundant_tokens": 195,
+  "missing_tokens": 74,
+  "interesting_results": [
+    {
+      "text_sentence": "Have had lower back, abdominal and left testicle pain for several months.",
+      "tokens_for_pred": [
+        "lower back ",
+        "abdominal",
+        "left testicle pain",
+        "abdominal",
+        "left testicle pain back",
+        "lower back abdomen",
+        "lower back ",
+        "abdominal",
+        "left testicle pain testis"
+      ],
+      "correct_tokens": 1,
+      "wrong_tokens": 0,
+      "non_sense_tokens": 8,
+      "redundant_tokens": 0,
+      "missing_tokens": 2,
+      "interesting": "yes"
+    },
+    {
+      "text_sentence": "I have constant back, neck and knee pains and all of my joints click.",
+      "tokens_for_pred": [
+        "constant back ",
+        "neck",
+        "knee pain",
+        "joint click",
+        "constant back neck",
+        "neck",
+        "knee pain back",
+        "constant back ",
+        "neck",
+        "knee pain",
+        "joint click knee"
+      ],
+      "correct_tokens": 2,
+      "wrong_tokens": 0,
+      "non_sense_tokens": 8,
+      "redundant_tokens": 2,
+      "missing_tokens": 2,
+      "interesting": "yes"
+    }
+  ],
+  "score": 431,
+  "accuracy": 0.7044167610419027,
+  "missing_tokens/correct_tokens": 0.17330210772833723
+}

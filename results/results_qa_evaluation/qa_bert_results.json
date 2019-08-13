@@ -1,0 +1,79 @@
+{
+  "correct_tokens": 423,
+  "wrong_tokens": 8,
+  "non_sense_tokens": 122,
+  "redundant_tokens": 275,
+  "missing_tokens": 61,
+  "interesting_results": [
+    {
+      "text_sentence": "My son is complaining of chest pains and stomach discomfort, with diarrhea and headache.",
+      "tokens_for_pred": [
+        "chest pain",
+        "stomach discomfort",
+        "chest pain chest",
+        "chest pain",
+        "stomach discomfort stomach"
+      ],
+      "correct_tokens": 2,
+      "wrong_tokens": 0,
+      "non_sense_tokens": 0,
+      "redundant_tokens": 3,
+      "missing_tokens": 2,
+      "interesting": "yes"
+    },
+    {
+      "text_sentence": "Here are the general symptoms: chest pain on both the left and right side, difficulty breathing and swallowing.",
+      "tokens_for_pred": [
+        "chest pain both left",
+        "right side ",
+        "difficulty breath",
+        "swallow",
+        "chest pain chest"
+      ],
+      "correct_tokens": 2,
+      "wrong_tokens": 0,
+      "non_sense_tokens": 2,
+      "redundant_tokens": 1,
+      "missing_tokens": 0,
+      "interesting": "yes"
+    },
+    {
+      "text_sentence": "I have three hard bumps on the back of my neck in different areas.",
+      "tokens_for_pred": [
+        "hard bump back neck differ area",
+        "hard bump neck",
+        "hard bump back"
+      ],
+      "correct_tokens": 1,
+      "wrong_tokens": 1,
+      "non_sense_tokens": 0,
+      "redundant_tokens": 1,
+      "missing_tokens": 0,
+      "interesting": "yes"
+    },
+    {
+      "text_sentence": "Have had lower back, abdominal and left testicle pain for several months.",
+      "tokens_for_pred": [
+        "lower back ",
+        "abdominal",
+        "left testicle pain",
+        "lower back ",
+        "abdominal",
+        "left testicle pain back",
+        "lower back ",
+        "abdominal",
+        "left testicle pain abdomen",
+        "pain testis"
+      ],
+      "correct_tokens": 1,
+      "wrong_tokens": 0,
+      "non_sense_tokens": 6,
+      "redundant_tokens": 3,
+      "missing_tokens": 2,
+      "interesting": "yes"
+    }
+  ],
+  "score": 586,
+  "accuracy": 0.8429951690821256,
+  "missing_tokens/correct_tokens": 0.14420803782505912
+}
