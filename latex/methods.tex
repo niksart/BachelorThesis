@@ -10,18 +10,25 @@ The objective of this component is to identify body parts words within the patie
 Unfortunately, I did not find any body part classification with these features. Therefore, the only chance for me was to produce my own classification, starting my work from the numerous informal body part lists that I found searching the Web. I based my classification mainly on the Wikipedia's list of body parts[], which I completed with other missing body parts found in other lists. I understand the licit perplexities that this approach may arise. However, in my opinion, what really matters is that, even with this amateur list of body parts, the results make my proof of concept creditable, as we will see in the next chapter. The classification is composed of [130] body parts saved in a csv file.
 
 \subsection{Finding a body part in a sentence}
-Finding a body part in a sentence is quite easy if you have an exhaustive list of body parts and the respective synonyms. The code does nothing more than a string matching between each word in the sentence and each synonym present inside the classification. This approach is simple but not perfect: for example, the word “back” is both a preposition and a body part. Therefore, the lack of context may introduce misunderstandings and lower the quality of the results.
+Finding a body part in a sentence is quite easy if you have an exhaustive list of body parts and the respective synonyms. The code does nothing more than a string matching between each word in the sentence and each synonym present inside the classification. This approach is simple but not perfect: for example, the word “back” is both a preposition and a body part. Therefore, looking only at words means forgetting the context: this may introduce misunderstandings and lower the quality of the results.
+%% TODO scrivo che c'e' da migliorare
 
 \section{Question-Answering system}
 \label{sec:qa_system}
-The outcome of the \textit{Body Part Finder} is then passed to the \textit{QA system}, whose basic aim is to give an answer to questions like “What are the symptoms in the sentence?” or “What is the problem with the neck?”. If the reader has never heard of the Machine Reading Comprehension task in the Deep Learning field, this may seem magic. However, fortunately, as we will see in the next sections, it is not.
+The outcome of the \textit{Body Part Finder} is then passed to the \textit{QA system}, whose basic aim is to give an answer to questions like “What are the symptoms in the sentence?” or “What is the problem with the neck?”. If the reader has never heard of Machine Reading Comprehension, this may seem magic. However, fortunately, as we will see in this section, it is not.
 
 \subsection{Types of questions}
 The questions asked to the specified model over each sentence are of two types:
 \begin{enumerate}
-  \item a generic question about symptoms: “What are the symptoms?”
-  \item a specific question about the problem of a found body part in the sentence: “What is the problem with the \textit{body part}?”
+  \item generic question about the symptoms in the sentence (“What are the symptoms?”)
+  \item specific question about the problem of a found body part in the sentence (“What is the problem with the [body part]?”)
 \end{enumerate}
+
+The question over the symptoms is intentionally generic because its aim is to catch the majority of the symptoms within the sentence. Thus, as we will see in the next section, the answer to this question should be interpreted.
+
+At the same time, the question over a body part is deliberately specific. The logic behind this question is that if a patient refers to a body part during the interview, perhaps it is the subject of a problem.
+
+Here is a figure in order to understand the whole component:
 
 %% IMAGE ABOUT QA SYSTEM
 \begin{figure}[h]
@@ -31,10 +38,13 @@ The questions asked to the specified model over each sentence are of two types:
 \medskip
 \end{figure}
 
-\subsection{Using BERT for reading comprehension}
-\subsubsection{What is BERT?}
-\subsection{R-NET}
+If we look at the answers of this figure, we can understand two problems: the model can sometimes provide an useful answer but too generic (this is the case of ``small bumps'') and might provide redundant answers, increasing unnecessarily the number of predictions.
 
+\subsection{BERT}
+\input{bert_explained}
+
+\subsection{R-NET}
+\input{rnet_explained}
 
 \section{Answer Interpreter}
 \label{sec:answer_interpreter}

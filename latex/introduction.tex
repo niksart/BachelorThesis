@@ -77,10 +77,10 @@ In this section I will briefly outline the methods I developed and the technolog
 The abstract component \textit{symptom identifier} is made up of three subcomponents:
 \begin{itemize}
   \item a \textit{body part finder}. Its aim is to identify words that are common body parts inside the sentence. The purpose is to find them and later inform the next component about the body parts that appeared within the sentence;
-  \item a \textit{Question-Answering (QA) system}. The objective of this component is, given a set of questions, to answer them highlighting the parts of the sentence which respond to each question. This task is called \textit{reading comprehension} and can be done with these two supported models:
+  \item a \textit{Question-Answering (QA) system}. The objective of this component is, given a set of questions, to answer them highlighting the parts of the sentence which respond to each question. This task is called \textit{Maching Reading Comprehension} and can be done with these two supported models:
     \begin{enumerate}
-      \item \textit{BERT}, that stands for \textit{Bidirectional Encoder Representations from Transformers}, finetuned on \textit{SQuAD} (a reading comprehension dataset developed by Stanford University);
-      \item \textit{R-NET}, an end-to-end neural networks model for reading comprehension developed by Microsoft;
+      \item \textit{BERT}, that stands for \textit{Bidirectional Encoder Representations from Transformers}, finetuned on \textit{SQuAD} (a Reading Comprehension dataset developed by Stanford University);
+      \item \textit{R-NET}, an end-to-end neural networks model for Reading Comprehension developed by Microsoft;
     \end{enumerate}
   \item an \textit{Answer Interpreter}. In this stage the answers of the previous component (the \textit{QA system}) become \textit{tokens for predictions}; this prepares them for the vectorization.
 \end{itemize}
