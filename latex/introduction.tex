@@ -1,0 +1,116 @@
+\chapter{Introduction}
+\label{cha:intro}
+
+\section{The major problem of physicians: time}
+\label{sec:problem_doctors}
+
+Physicians all over the world visit patients under time limitations. In addition, in underdeveloped countries there is not always a suitable doctor-population ratio (1:1000 is the optimal ratio according to the World Health Organization): thus, doctors in those places may be overloaded with work. Hence, the main problem of physicians is time. This obviously affects the way in which doctors examine patients, especially the anamnesis elicitation, which is the most time-consuming task during medical examinations.
+
+\subsection{The anamnesis elicitation: a crucial but time-consuming task}
+
+The anamnesis of a patient is the information gained by a physician by asking specific questions whose answers may be useful in formulating a diagnosis (wiki). This task, often called in medical jargon “history taking”, requires a long procedure because the physician does not have only to interview the patient and gather information about the history of their problem, but even write down a brief summary of the conversation in the patient’s record. This necessary bureaucracy is demanding and risks becoming all-embracing. To give an example, a research group monitoring 57 physicians in the United States observed that during the clinic day, physicians spend 49.2\% of their clinical time on health records and desk work and only 27\% of their time with patients (Sinsky, 2016). However, this task is fundamental: according to research, medical history provides in the 82.5\% of patients enough information to make an initial diagnosis of a disease (Hampton, 1975).
+
+The traditional way of interviewing the patient is not only long and demanding, but even sometimes incomplete. For instance, 134 primary care physicians observed that only 59\% of essential history items were collected during history taking. The physicians were able to obtain relevant information about presenting symptoms and medications, but they often missed important information about related symptoms and medical history. This because a physician needs to remember a large number of questions and symptoms to have a complete and accurate history. Human memory is fallible and forgetting to ask some relevant questions during an interview might have a significant implication in patient management. (John document)
+
+\subsection{An alternative to the traditional anamnesis elicitation}
+
+Therefore, it is for the aforementioned reasons that a new approach to anamnesis should be tried. Digitize this task is a possible solution which is time-saving for physicians and, at the same time, could provide a better history taking outcome. The ideal interaction model between this history taking program and the patient is a chat conversation. Basically, the patient, chatting, interacts with this conversational software, which has to understand and classify the presenting symptoms and, later, elicit symptoms and information useful for the diagnosis that the patient may have forgotten. As the title of my dissertation suggests, I focused on the first obstacle towards an effective history taking chatbot: identifying and classifying symptoms within a patient’s answer.
+
+\section{What does identifying and classifying symptoms mean?}
+
+In this section I am going to illustrate my work at a very high level and presenting the two main abstract components of my code: the \textit{symptom identifier} and the \textit{symptom classifier}. 
+
+\label{sec:identifying_classifying}
+\subsection{Identifying symptoms}
+
+Identifying symptoms within a patient's sentence means finding, inside the text of the sentence, every group of adjacent words that carry together a coherent symptom concept. An example may be clearer:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=12cm]{symptom_identifier}
+\caption{The \textit{symptom identifier} seen abstractly.}
+\medskip
+\end{figure}
+
+These groups of words will then be mapped into precise symptoms contained in a symptom classification: this is the reason why I named these groups of words “tokens for predictions” (TFP for short).
+
+\subsection{Classifying symptoms}
+Thus, the objective of the symptom classifier is to map correctly the previous \textit{tokens for predictions} into a list of specific symptoms. Each symptom inside the classification has an unique identifier called CUI (Concept Unique Identifier). The first character of a CUI is a \textit{C} followed by seven digits.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{symptom_classifier}
+\caption{The \textit{symptom classifier} seen abstractly.}
+\medskip
+\end{figure}
+
+\subsubsection{The MEDCIN symptom classification}
+MEDCIN is a medical terminology system developed by Medicomp Systems Inc. It contains more than $300\,000$ clinical data elements encompassing symptoms, physical examinations, tests, diagnoses and therapies. What makes MEDCIN particularly fit for the purpose is its nature of being a \textit{point of care} terminology system. This means that MEDCIN is intended to help clinicians in documenting clinical information while interacting with patients. Therefore, MEDCIN includes all the symptom concepts that a physician may need when summarizing a patient's problem. In addition, another positive aspect stands in its hierarchical organization: the symptoms are structured in a tree, and each child of a node is in a \textit{is-a} relationship with its father.
+
+Fortunately, although MEDCIN is copyrighted, it is inside the list of supported UMLS terminology systems. The Unified Medical Language System (UMLS) is a compendium of many controlled medical vocabularies and it is maintained by the US National Library of Medicine. Academic users may access the UMLS free of charge for research purposes.
+
+Encompassing MEDCIN, UMLS provides a mapping structure between it and any other terminology system supported by UMLS. This is positive because the aforementioned CUIs are codes which are transversal to all the vocabularies inside the UMLS.
+
+\subsubsection{But why is  classifying symptoms necessary?}
+Find an appropriate mapping for a \textit{token for prediction} is not a trivial task, mainly because reality is not easily classifiable; natural language in particular. However, mapping symptoms to a classification is useful especially for improving the quality of the chatbot. This because the long-term objective is not to understand the presenting symptoms (physicians, and, generally, every human, are very good at it) but ask intelligent questions to the patient in order to extract missing symptoms and, in general, useful information for the diagnosis. This could be done asking questions about related symptoms or reviewing the body systems (Review of Systems (ROS) is normal practice in history taking). For these reasons, a mapping to a standard symptom classification is essential.
+
+%%%%%%% USEFUL FOR FUTURE WORK
+% For example, there is no explicit concept for a "third degree burn of left index finger caused by hot water". However, using the compositional syntax it can be represented as:
+
+% \begin{verbatim}
+%    284196006 | burn of skin | :
+%    116676008 | associated morphology | = 80247002 | third degree burn injury |
+%  , 272741003 | laterality | = 7771000 | left |
+%  , 246075003 | causative agent | = 47448006 | hot water |
+%  , 363698007 | finding site | = 83738005 | index finger structure
+% \end{verbatim}
+%
+% BACK is both a preposition and a body part, then using contextual embeddings like bert finetuned or elmo embeddings could provide better results
+%%%%%%%
+
+\section{Brief description of methods}
+\label{sec:brief_methods}
+
+In this section I will briefly outline the methods I developed and the technologies I used. Then, in the next chapter, I  will deepen more into the details of the components listed below.
+
+\subsection{Symptom identifier}
+The abstract component \textit{symptom identifier} is made up of three subcomponents:
+\begin{itemize}
+  \item a \textit{body part finder}. Its aim is to identify words that are common body parts inside the sentence. The purpose is to find them and later inform the next component about the body parts that appeared within the sentence;
+  \item a \textit{Question-Answering (QA) system}. The objective of this component is, given a set of questions, to answer them highlighting the parts of the sentence which respond to each question. This task is called \textit{reading comprehension} and can be done with these two supported models:
+    \begin{enumerate}
+      \item \textit{BERT}, that stands for \textit{Bidirectional Encoder Representations from Transformers}, finetuned on \textit{SQuAD} (a reading comprehension dataset developed by Stanford University);
+      \item \textit{R-NET}, an end-to-end neural networks model for reading comprehension developed by Microsoft;
+    \end{enumerate}
+  \item an \textit{Answer Interpreter}. In this stage the answers of the previous component (the \textit{QA system}) become \textit{tokens for predictions}; this prepares them for the vectorization.
+\end{itemize}
+
+\subsection{Symptom classifier}
+The abstract component \textit{symptom classifier} is made up of two subcomponents:
+\begin{itemize}
+  \item a \textit{Vectorifier}. The purpose of this component is encoding a given sentence into an embedding which can be of two types:
+  \begin{enumerate}
+    \item \textit{GloVe} embedding;
+    \item \textit{BERT} embedding;
+  \end{enumerate}
+  \item a \textit{Symptom Tree Mapper}. The aim of this component is returning, given the embedding of a \textit{token for prediction}, the CUI of the most similar symptom. Similarity is a suitable measure because both the \textit{tokens for predictions} and each symptom name can be vectorized; thus, for both of them, an internal representation is available.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=17cm]{methods_overview}
+\caption{Title of figure}
+\medskip
+\end{figure}
+
+\section{Brief description of results}
+\label{sec:brief_results}
+
+\subsection{Results of QA system}
+bert finetuned squad is better that rnet trained on squad
+
+\subsection{Results of mapping}
+What's the best combination of features?
+
+\section{Dataset}
+Briefly explain what contains the dataset
