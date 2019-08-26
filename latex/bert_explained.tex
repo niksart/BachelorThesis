@@ -29,8 +29,10 @@ Briefly, pre-training BERT means training it on two tasks:
 \subsubsection{A dataset for Reading Comprehension: SQuAD}
 In the fine-tuning stage BERT is trained on SQuAD, a dataset for Reading Comprehension developed by Stanford University. It consists in a collection of $100\,000$ question-answer pairs over different Wikipedia passages. There are two versions of SQuAD: the first version (\texttt{v1.1}) contains only questions over a passage that have an answer, while the second version (\texttt{v2.0}) have some questions without answer. Obviously, doing better on SQuAD 2.0 is more difficult, because it requires a minimum level of reasoning.
 
-\subsubsection{Fine-tuning BERT on SQuAD}
-As illustrated in Figure \ref{fig:bertsquad}, during fine-tuning passage and question are both passed to BERT (separated by the \texttt{[SEP]} tag). During this phase were introduced two vectors: $S$ and $E$, both $\in \mathbb{R}^\mathbb{H}$. The probability of a token $i$ of being the start of the answer is $P_{i} = \frac{\mathrm{e}^{S \cdot T_{i}}}{\sum_{j} \mathrm{e}^{S \cdot T_{j}}}$. The analogous formula is used for the end of the answer. The score of a candidate span that goes from token $i$ to token $j$ is defined as $score_{i, j} = S \cdot T_{i} + E \cdot T_{j}$. The maximum score where $j >= i$ is used as prediction. The training objective is the sum of the two log-likelihoods \eqref{eqn:loglikelihood} of the correct start and end positions. 
+\subsubsection{Fine-tuning BERT on SQuAD1.1}
+As illustrated in Figure \ref{fig:bertsquad}, during fine-tuning passage and question are both passed to BERT (separated by the \texttt{[SEP]} tag). This phase introduces two trainable vectors: $S$ (for the start of the answer) and $E$ (for the end of the answer) both of dimension $\mathbb{R}^\mathbb{H}$ ($\mathbb{H}$ is the hidden size, $768$ for BERT Base). 
+
+The probability of a token $i$ of being the start of the answer is $P_{i} = \frac{\mathrm{e}^{S \cdot T_{i}}}{\sum_{j} \mathrm{e}^{S \cdot T_{j}}}$, where $T$ here represents the last layer of BERT. The analogous formula is used for the end of the answer. The score of a candidate span that goes from token $i$ to token $j$ is defined as $score_{i, j} = S \cdot T_{i} + E \cdot T_{j}$. The maximum score where $j \geq i$ is used as prediction. Finally, the training objective is defined as the sum of the two log-likelihoods \eqref{eqn:loglikelihood} of the correct start and end positions. 
 
 \begin{equation}
 \label{eqn:loglikelihood}

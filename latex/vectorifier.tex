@@ -1,0 +1,6 @@
+Essentially, this component encodes a set of words in a vector. The supported internal representation are two:
+\begin{itemize}
+  % default pooling settings of bert as a service: mean of the second to last layer
+  \item \textit{BERT embeddings}. Using BERT is even possible to extract embeddings, which have the virtue of being contextual. For this purpose I used ``bert-as-a-service''. It works with different pooling strategies: with the default one, does a mean of the vectors of second-to-last layer.
+  \item \textit{GloVe embeddings}.
+\end{itemize}
