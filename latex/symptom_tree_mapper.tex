@@ -1,0 +1,11 @@
+The aim of this component is taking the \textit{tokens for predictions} (outcome of Answer Interpreter) and with the help of the Vectorifier, output the most similar symptom's CUI.
+
+%scrivo dello stemming
+In order to do this, each symptom inside the classification must have its representative vector of the same type and dimension of the embedding of the \textit{token for prediction}. Since each symptom in the classification has a descriptive field, called ``concept name'', I treated it like a sentence and I choose to use its vectorization as representative vector. In order to hasten the whole process at runtime I pre-computed these representative vectors for each supported type and dimension.
+
+\subsection{The Symptom Tree}
+As mentioned in section \ref{sec:cla_symp}, a suitable data structure for representing the symptom classification is a tree. In the UMLS system this hierarchy is stored with a parent array representation. The Python library that I used for this purpose is ``anytree''.
+
+During the construction of the tree I tagged some nodes as related with a specific body part. This is helpful during mapping: given a \textit{token for prediction} that contains a body part, the search of the correct symptom is then circumscribed only to some subtrees.
+
+\subsection{Mapping a \textit{token for prediction} to a symptom node}

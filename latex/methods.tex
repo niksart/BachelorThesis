@@ -40,7 +40,6 @@ Here is a figure in order to understand the whole component:
 
 If we look at the answers of this figure, we can understand two problems: the model can sometimes provide an useful answer but too generic (this is the case of ``small bumps'') and might provide redundant answers, increasing unnecessarily the number of predictions.
 
-%% domenica
 \subsection{BERT}
 \input{bert_explained}
 
@@ -48,7 +47,6 @@ If we look at the answers of this figure, we can understand two problems: the mo
 \input{rnet_explained}
 
 
-%% lunedi
 \section{Answer Interpreter}
 \label{sec:answer_interpreter}
 \input{answer_interpreter}
@@ -58,24 +56,15 @@ If we look at the answers of this figure, we can understand two problems: the mo
 \label{sec:vectorifier}
 \input{vectorifier}
 
+
 \section{Symptom Tree Mapper}
 \label{sec:symptom_tree_mapper}
-\subsection{Symptom Tree}
-TODO, representation in anytree, from mysql following refto
-
-\subsection{Mapping of a token for prediction to a specific symptom}
-TODO
+\input{symptom_tree_mapper}
 
 
-%% martedi'
 \section{How to evaluate results?}
 \label{sec:eval_results}
 TODO
-
-
-\section{How to find an internal representation of a symptom?}
-Use the concept name and vectorize the sentence (with glove)
-Prima fai lo stemming pero', justify it, reduce the space of mapping. possibile figura
 
 
 \section{Dataset}
