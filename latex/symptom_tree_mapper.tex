@@ -8,4 +8,11 @@ As mentioned in section \ref{sec:cla_symp}, a suitable data structure for repres
 
 During the construction of the tree I tagged some nodes as related with a specific body part. This is helpful during mapping: given a \textit{token for prediction} that contains a body part, the search of the correct symptom is then circumscribed only to some subtrees.
 
-\subsection{Mapping a \textit{token for prediction} to a symptom node}
+\subsection{Mapping a \textit{token for prediction} to a symptom}
+This phase is divided into two parts. The first consists in passing to the Vectorifier the \textit{token for prediction} and get from it the subsentences and the relative vectors; the second in computing the cosine similarity between each subsentence vector and each symptom vector. At this point, the highest similarity shows the candidate symptom, whose CUI is predicted.
+
+In the code there are two options that can change the process flow described above:
+\begin{itemize}
+  \item as mentioned earlier, if the \textit{token for prediction} contains a body part, then the mapper searches only in subtrees related to that body part (to refer to this option in the future I will use the term ``pruning'');
+  \item if a \textit{minimum similarity level} is set, the prediction is output only if the highest similarity is more than this level. 
+\end{itemize}

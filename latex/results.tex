@@ -1,0 +1,94 @@
+\chapter{Results}
+\label{cha:results}
+In the next two sections I will illustrate and discuss the results of the main two abstract components of my project: the \textit{Symptom Identifier} and the \textit{Symptom Classifier}.
+
+\section{Evaluation of the Symptom Identifier}
+In order to evaluate the Symptom Identifier, I manually classified the tokens for predictions of each sentence in 4 classes (just to recall, tokens for predictions are the outcome of the Symptom Identifier):
+\begin{itemize}
+  \item \texttt{correct}. These are tokens that contain an intelligible symptom that is also present in the patient's sentence;
+  \item \texttt{redundant}. These tokens are correct but redundant (there is another token that has the same meaning);
+  \item \texttt{non sense}. These tokens are simply not intelligible;
+  \item \texttt{wrong}. These tokens are deceptive because they contain an intelligible symptom but they are not present in patient's sentence.
+\end{itemize}
+
+Finally, for each sentence, I noted also the number of symptoms present in the sentence but not in the tokens (\texttt{missing}). In order to choose the best model for future evaluations, I designed a score metric that summarizes the performance of this component:
+\begin{equation}
+score = \texttt{\#correct} + 0 \cdot \texttt{\#redundant} - \texttt{\#non sense} - \texttt{\#wrong} - \texttt{\#missing}
+\end{equation}
+
+The reader may ask their-self why is a non sense token so penalized. The reason is that this type of token is detrimental as much as a wrong one because it leads to a random prediction. Instead, a redundant token is neutral because it probably leads to a duplicated prediction.
+
+Here is an overview of the obtained results:
+
+\definecolor{green}{rgb}{0.8,0.9,0.8}
+\definecolor{lightgreen}{rgb}{0.89, 0.94, 0.89}
+\definecolor{red}{rgb}{1,0.89,0.89}
+
+\begin{center}
+ \begin{tabular}{| c | c | c | c |} 
+ \hline
+ \# of & BERT & R-NET \\ [0.5ex] 
+ \hline\hline
+ \rowcolor{green}
+ \texttt{correct} & 423 & 427 \\ 
+ \hline
+ \rowcolor{lightgreen}
+ \texttt{redundant} & 275 & 195 \\
+ \hline
+ \rowcolor{red}
+ \texttt{non sense} & 122 & 247 \\
+ \hline
+ \rowcolor{red}
+ \texttt{wrong} & 8 & 14 \\
+ \hline
+ \rowcolor{red}
+ \texttt{missing} & 61 & 74 \\
+ \hline
+  \textbf{score} & \textbf{232} & \textbf{92} \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+\section{Evaluation of the Symptom Classifier}
+\subsection{Definitions and notation}
+
+The expression ``\texttt{real cuis}'' is always contextual to a specific sentence. Thus, ``$\texttt{real cuis}_{i}$'' indicates the list of real symptom CUIs within the i-th sentence. Analogously, the expression ``$\texttt{predicted cuis}_{i}$'' indicates the list of predicted CUIs of the i-th sentence.
+
+The symbol ``\texttt{\#}'' in front of a list identifier indicates its length.
+
+\subsubsection{Types of predictions}
+The predictions extracted from a patient's sentence can be classified:
+\begin{itemize}
+  \item \texttt{correct}, if the prediction is located into a subtree rooted in any of the \texttt{real cuis}. Correct predictions can be of two types:
+    \begin{itemize}
+      \item \textit{redundant} (\texttt{R}). When a prediction is mapped into a subtree, the subtree is marked as associated with that prediction. Then, if another prediction of the same sentence stays in that subtree, it is classified as redundant;
+      \item \textit{non-redundant} (\texttt{NR}), if the prediction stays in a unmarked subtree;
+    \end{itemize}
+  \item \texttt{wrong}, if the prediction is not located in any of the subtrees.
+\end{itemize}
+
+Also these classifications are contextual to the sentence, thus they can be indexed like in the case of \texttt{real cuis}.
+
+\subsection{Measures}
+%TODO
+
+Accuracy
+\begin{equation}
+\frac{\sum_{i}{\texttt{\#correct}_{i}^{\texttt{NR}}}}{\sum_{i}{\texttt{\#real cuis}_{i}}}
+\end{equation}
+
+correct \% of predictions
+\begin{equation}
+\frac{\sum_{i}{\texttt{\#correct}_{i}}}{\sum_{i}{\texttt{\#predicted cuis}_{i}}}
+\end{equation}
+
+attempts per real cui
+\begin{equation}
+\frac{\sum_{i}{\texttt{\#predicted cuis}_{i}}}{\sum_{i}{\texttt{\#real cuis}_{i}}}
+\end{equation}
+
+missed real cuis
+\begin{equation}
+\sum_{i}{\texttt{\#real cuis}_{i}} - \sum_{i}{\texttt{\#correct}^{\texttt{NR}}_{i}}
+\end{equation}

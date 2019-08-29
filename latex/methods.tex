@@ -1,3 +1,10 @@
+\begin{figure}[h]
+\centering
+\includegraphics[width=17cm]{methods_overview}
+\caption{Overview of methods}
+\medskip
+\end{figure}
+
 \chapter{Methods}
 \label{cha:methods}
 In this chapter I will describe in detail the methods used in order to achieve the results described in the next chapter. In the following sections I will analyze the abstract components illustrated in the Introduction.
@@ -62,9 +69,19 @@ If we look at the answers of this figure, we can understand two problems: the mo
 \input{symptom_tree_mapper}
 
 
-\section{How to evaluate results?}
+\section{How to evaluate predictions?}
 \label{sec:eval_results}
-TODO
+Once predictions are computed, the objective is evaluating them. The evaluation process is contextual to the sentence and it is based on a list of $m$ predictions ($[CUI_{p}1, CUI_{p}2, ..., CUI_{p}m]$) and a list of $n$ \emph{real CUIs}, that are the actual symptoms present in the sentence ($[CUI_{s}1, CUI_{s}2, ..., CUI_{s}n]$).
+
+As mentioned in section \ref{sec:cla_symp}, the relationships between every child and every father are ``is-a''. This means that a child symptom is always a specialization of its father. In other words, the child is equal to its father, but more detailed. Thus, a prediction is considered correct if it is located within a subtree rooted in a real CUI.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=11cm]{predictions}
+\caption{Each real symptom is expanded in a subtree rooted in it. A prediction is evaluated as correct if it stays in one of these subtrees.}
+\medskip
+\label{fig:symptom_t_m}
+\end{figure}
 
 
 \section{Dataset}
