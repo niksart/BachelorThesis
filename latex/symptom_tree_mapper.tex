@@ -3,6 +3,7 @@ The aim of this component is taking the \textit{tokens for predictions} (outcome
 %scrivo dello stemming
 In order to do this, each symptom inside the classification must have its representative vector of the same type and dimension of the embedding of the \textit{token for prediction}. Since each symptom in the classification has a descriptive field, called ``concept name'', I treated it like a sentence and I choose to use its vectorization as representative vector. In order to hasten the whole process at runtime I pre-computed these representative vectors for each supported type and dimension.
 
+% quanti sintomi ci sono nell'albero
 \subsection{The Symptom Tree}
 As mentioned in section \ref{sec:cla_symp}, a suitable data structure for representing the symptom classification is a tree. In the UMLS system this hierarchy is stored with a parent array representation. The Python library that I used for this purpose is ``anytree''.
 
@@ -14,5 +15,5 @@ This phase is divided into two parts. The first consists in passing to the Vecto
 In the code there are two options that can change the process flow described above:
 \begin{itemize}
   \item as mentioned earlier, if the \textit{token for prediction} contains a body part, then the mapper searches only in subtrees related to that body part (to refer to this option in the future I will use the term ``pruning'');
-  \item if a \textit{minimum similarity level} is set, the prediction is output only if the highest similarity is more than this level. 
+  \item if a \textit{minimum similarity} level is set, the prediction is output only if the highest similarity is more than this level. 
 \end{itemize}
