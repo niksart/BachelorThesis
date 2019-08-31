@@ -217,7 +217,7 @@ There is little to say about this option: without doubt, it contributes positive
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-\subsubsection{Ablation test for the filter of ``unuseful words''}
+\subsubsection{Ablation test for the filter of ``useless words''}
 \begin{figure}[h]%[!tbp]
   \centering
   \begin{minipage}[b]{0.4\textwidth}
@@ -245,7 +245,7 @@ There is little to say about this option: without doubt, it contributes positive
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
-This option turned out to be completely ineffective. Personally, I think that the cause is that during prediction
+This option turned out to be completely ineffective. Personally, I think that the cause is that the Symptom Classifier considers all the possible subsentences of a token for prediction and maps the most similar to a symptom. This behavior, in my opinion, already filters the so-called ``useless words'' because, generally, they are not used in the concept names of symptoms.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -284,6 +284,8 @@ This option turned out to be completely ineffective. Personally, I think that th
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
+The objective of this test is to examine if is possible to lower the \texttt{medium attempts} score without penalizing heavily the \texttt{accuracy}. As we can see in the table, it is possible to do it gradually raising the \textit{minimum similarity} level. The best performance is gained with a $0.8$ level (the accuracy decreases by 0.4 \% but the medium attempts passes from $1.8$ to $1.5$).
 
+The found optimum minimum similarity level is not suitable for each dataset: this meta-parameter could be over-fitted to my examples. However, this test is to interpret as a proof of concept for saying that this is a practicable approach that can lower the number of wrong predictions.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
