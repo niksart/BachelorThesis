@@ -71,7 +71,7 @@ The predictions are based on the \textit{tokens for prediction} and can be class
   \item \texttt{wrong}, if the prediction is not located in any of the subtrees.
 \end{itemize}
 
-Also these terms are contextual to the sentence: this means that they can be indexed as well. To give an example, $\texttt{\#correct}_{i}$ represents the number of correct predictions of the i-th sentence.
+These terms are also contextual to the sentence: this means that they can be indexed as well. To give an example, $\texttt{\#correct}_{i}$ represents the number of correct predictions of the i-th sentence.
 
 \subsection{Measures}
 This component performs a slight variation of multi-class classification (a class for each symptom present in the tree). The variation stands in the ``pruning'' option (the number of candidate classes decreases) and in the fact that if the predicted CUI and the real one are different (i.e. they are different classes), the prediction could be correct (if the prediction is in the subtree of the real CUI).
@@ -118,26 +118,30 @@ In this subsection I will show and analyze individually every option of the Symp
 \end{figure}
 
 \begin{center}
- \begin{tabular}{| c | c | c | c | c |} 
+ \begin{tabular}{| c | c | c | c | c | c |} 
  \hline
- \thead{\texttt{embedding}\\\texttt{type}} & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
+ \thead{\texttt{embedding}\\\texttt{type}} & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{harmonic}\\\texttt{mean}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
  \hline\hline
- \texttt{GloVe 50} & 55.5 \% & 40.1 \% & 1.8  & 208 \\ 
+ \texttt{GloVe 50} & 55.5 \% & 40.1 \% & 46.5 \% & 1.8 & 208 \\ 
  \hline
- \texttt{GloVe 100} & 55.2 \% & 39.1 \% & 1.8 & 209 \\
+ \texttt{GloVe 100} & 55.2 \% & 39.1 \% & 45.8 \% & 1.8 & 209 \\
  \hline
- \texttt{GloVe 200} & 59.1 \% & 43.7 \% & 1.8 & 191 \\
+ \texttt{GloVe 200} & 59.1 \% & 43.7 \% & 50.2 \% & 1.8 & 191 \\
  \hline
- \texttt{GloVe 300} & 59.3 \% & 42.2 \% & 1.8 & 190 \\
+ \texttt{GloVe 300} & 59.3 \% & 42.2 \% & 49.3 \% & 1.8 & 190 \\
  \hline
- \texttt{BERT emb.} & 46.7 \% & 32.9 \% & 1.8 & 249 \\
+ \texttt{BERT emb.} & 46.7 \% & 32.9 \% & 38.6 \% & 1.8 & 249 \\
  \hline
 \end{tabular}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
+During this test I compared different types of embeddings. As we can see in the table, the performances of \texttt{GloVe 50} and \texttt{GloVe 100} are very similar (we can simply look at the harmonic mean because the medium accuracy rests the same). However, \texttt{GloVe 200} introduced an improvement compared to \texttt{GloVe 100} (+ 3.9 \% of accuracy and + 4.6 \% of correct predictions ). This trend is also confirmed by \texttt{GloVe 300} (+ 4.1 \% of accuracy and + 3.1 \% of correct predictions). Looking at these results, I choose \texttt{GloVe 200} as the embedding type used for the tests that I will explain in the next sections.
 
+The \texttt{medium attempts} are all equal because the options that cause a decrease of the number of predictions are not enabled: the Body Part Finder cause an increase of them and using zero level of minimum similarity does not affect the number of predictions.
+
+BERT embeddings do not perform as good as GloVe embeddings. This because I extracted the embeddings from a non-finetuned BERT, which has not been trained on any medical corpus. Another possible reason for these poor performance is that I tried only one pooling strategy (second-to-last mean of embeddings). Later, I discovered that there are more suitable pooling strategies that could be used. %TODO link the post
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -147,12 +151,12 @@ In this subsection I will show and analyze individually every option of the Symp
   \centering
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=9cm]{graphs/comparison_search_bp}
-    \caption{Comparing the composition of the predictions across different embedding types.}
+    \caption{Comparing the composition of the predictions when the Body Part Finder is enabled (\texttt{search}) and when it is not (\texttt{no search}).}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=8cm]{graphs/comparison_search_bp_missings}
-    \caption{Comparing the \texttt{missing symptoms} across different embedding types.}
+    \caption{Comparing the \texttt{missing symptoms} when the Body Part Finder is enabled (\texttt{search}) and when it is not (\texttt{no search}).}
   \end{minipage}
 \end{figure}
 
@@ -170,7 +174,11 @@ In this subsection I will show and analyze individually every option of the Symp
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
+In Machine Learning an ablation test is a test in which a model is tested without a feature (ablation of the considered feature), and then with it. This is done in order to test the effectiveness of the component.
 
+The introduction of this component led to both pros and cons. The advantage is that there was a large improvement in accuracy (+ 19.3 \%). However, the downside of this percentage lift is that the \texttt{medium attempts} for each symptom in the sentences passed from 0.9 (where there was not enough tokens for prediction in order to cover the \texttt{\#real cuis}) to 1.8 (an excessive number of tokens for predictions).
+
+The percentage of $\texttt{correct}^{\texttt{NR}}$ with respect to the total number of prediction decreased from 41.9 \% (\texttt{no search} for body parts) to 33.5 \% (\texttt{search} for body parts). This was caused by the lift of the number of wrong predictions, that were probably random classifications based on non-sense or wrong tokens for predictions. % For this reason the necessary future work is to limit non-sense tokens.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -181,12 +189,12 @@ In this subsection I will show and analyze individually every option of the Symp
   \centering
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=9cm]{graphs/comparison_pruning}
-    \caption{Comparing the composition of the predictions across different embedding types.}
+    \caption{Comparing the composition of the predictions when the ``pruning'' option is enabled (\texttt{pruning}) and when it is not (\texttt{no pruning}).}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=8cm]{graphs/comparison_pruning_missings}
-    \caption{Comparing the \texttt{missing symptoms} across different embedding types.}
+    \caption{Comparing the \texttt{missing symptoms} when the ``pruning'' option is enabled (\texttt{pruning}) and when it is not (\texttt{no pruning}).}
   \end{minipage}
 \end{figure}
 
@@ -204,7 +212,7 @@ In this subsection I will show and analyze individually every option of the Symp
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
-
+There is little to say about this option: without doubt, it contributes positively to the results. This because with the same number of predictions (the \texttt{medium attempts} score rests the same) it causes an improvement in both \texttt{accuracy} (+ 15.4 \%) and \texttt{correct predictions} (+ 7.7 \%).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -214,12 +222,12 @@ In this subsection I will show and analyze individually every option of the Symp
   \centering
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=9cm]{graphs/comparison_filtering}
-    \caption{Comparing the composition of the predictions across different embedding types.}
+    \caption{Comparing the composition of the predictions when the filtering ``useless words'' option is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=8cm]{graphs/comparison_filtering_missings}
-    \caption{Comparing the \texttt{missing symptoms} across different embedding types.}
+    \caption{Comparing the \texttt{missing symptoms} when the filtering ``useless words'' option is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
   \end{minipage}
 \end{figure}
 
@@ -237,7 +245,7 @@ In this subsection I will show and analyze individually every option of the Symp
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
-
+This option turned out to be completely ineffective. Personally, I think that the cause is that during prediction
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -247,12 +255,12 @@ In this subsection I will show and analyze individually every option of the Symp
   \centering
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=9cm]{graphs/comparison_min_similarity}
-    \caption{Comparing the composition of the predictions across different embedding types.}
+    \caption{Comparing the composition of the predictions when different \textit{minimum similarity} levels are used.}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=8cm]{graphs/comparison_min_similarity_missings}
-    \caption{Comparing the \texttt{missing symptoms} across different embedding types.}
+    \caption{Comparing the \texttt{missing symptoms} when different \textit{minimum similarity} levels are used.}
   \end{minipage}
 \end{figure}
 
