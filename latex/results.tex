@@ -3,6 +3,7 @@
 In the next two sections I will illustrate and discuss the results of the main two abstract components of my project: the \textit{Symptom Identifier} and the \textit{Symptom Classifier}.
 
 \section{Evaluation of the Symptom Identifier}
+\label{sec:eval_symptom_identifier}
 In order to evaluate the Symptom Identifier, I manually classified the tokens for predictions of each sentence in four classes (just to recall, tokens for predictions are the outcome of the Symptom Identifier):
 \begin{itemize}
   \item \texttt{correct} tokens. These are tokens that contain an intelligible symptom that is also present in the patient's sentence;
@@ -52,6 +53,24 @@ Here is an overview of the obtained results:
 \end{center}
 
 The results, and, in particular, the score measure, suggest that BERT is consistently better for this task. For this reason I used its outcome as input for the evaluation of the Symptom Classifier.
+
+However, some more measures could help to understand the real performances of the two models. Numerically, using BERT, the percentage of correct and redundant TFPs is $84.8 \%$ ($\frac{\texttt{\#correct} + \texttt{\#redundant}}{\texttt{\#TFP}}$); against the $70.4 \%$ when using R-NET. If we consider only the correct TFPs ($\frac{\texttt{\#correct}}{\texttt{\#TFP}}$), the percentage decreases to $52.6 \%$ (against the $48.4 \%$ when using R-NET). This component, always using BERT, can identify the $88.0 \%$ of symptoms present in sentences ($\frac{\texttt{\#correct}}{\texttt{\#correct} + \texttt{\#missings}}$). The percentage using R-NET is more or less the same ($87.5 \%$). The following table summarizes these results.
+
+\newcolumntype{C}{ >{\centering\arraybackslash} m{4cm} }
+\newcolumntype{D}{ >{\centering\arraybackslash} m{2cm} }
+\begin{center}
+ \begin{tabular}{| C | D | D |}
+ \hline
+ measures & BERT & R-NET \\ [1ex] 
+ \hline\hline
+ \texttt{$\frac{\texttt{\#correct} + \texttt{\#redundant}}{\texttt{\#TFP}}$} & 84.8 \% & 70.4 \% \\[1ex]
+ \hline
+ \texttt{$\frac{\texttt{\#correct}}{\texttt{\#TFP}}$} & 52.6 \% & 48.4 \% \\[1ex]
+ \hline
+ \texttt{$\frac{\texttt{\#correct}}{\texttt{\#correct} + \texttt{\#missings}}$} & 88.0 \% & 87.5 \% \\[1ex]
+ \hline
+\end{tabular}
+\end{center}
 
 \section{Evaluation of the Symptom Classifier}
 \subsection{Definitions and notation}
@@ -137,11 +156,11 @@ In this subsection I will show and analyze individually every option of the Symp
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
-During this test I compared different types of embeddings. As we can see in the table, the performances of \texttt{GloVe 50} and \texttt{GloVe 100} are very similar (we can simply look at the harmonic mean because the medium accuracy rests the same). However, \texttt{GloVe 200} introduced an improvement compared to \texttt{GloVe 100} (+ 3.9 \% of accuracy and + 4.6 \% of correct predictions ). This trend is also confirmed by \texttt{GloVe 300} (+ 4.1 \% of accuracy and + 3.1 \% of correct predictions). Looking at these results, I choose \texttt{GloVe 200} as the embedding type used for the tests that I will explain in the next sections.
+During this test I compared different types of embeddings. As we can see in the table, the performances of \texttt{GloVe 50} and \texttt{GloVe 100} are very similar (we can simply look at the harmonic mean between accuracy and correct predictions because the medium attempts rest the same). However, \texttt{GloVe 200} introduced an improvement compared to \texttt{GloVe 100} (+ 3.9 \% of accuracy and + 4.6 \% of correct predictions ). This trend is also confirmed by \texttt{GloVe 300} (+ 4.1 \% of accuracy and + 3.1 \% of correct predictions). Looking at these results, I choose \texttt{GloVe 200} as the embedding type used for the tests that I will explain in the next sections.
 
 The \texttt{medium attempts} are all equal because the options that cause a decrease of the number of predictions are not enabled: the Body Part Finder cause an increase of them and using zero level of minimum similarity does not affect the number of predictions.
 
-BERT embeddings do not perform as good as GloVe embeddings. This because I extracted the embeddings from a non-finetuned BERT, which has not been trained on any medical corpus. Another possible reason for these poor performance is that I tried only one pooling strategy (second-to-last mean of embeddings). Later, I discovered that there are more suitable pooling strategies that could be used. %TODO link the post
+BERT embeddings do not perform as good as GloVe embeddings. This because I extracted the embeddings from a non-finetuned BERT, which has not been trained on any medical corpus. Another possible reason for these poor performance is that I tried only one pooling strategy (second-to-last mean of embeddings). Later, I discovered that there are more suitable pooling strategies that could be used, as showed in the referenced post \cite{poolingstrategies}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage

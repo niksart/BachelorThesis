@@ -1,9 +1,8 @@
 \subsection{Encoding a sentence in a vector}
 The first aim of this component is encoding a sentence in a vector. The supported internal representation are two:
 \begin{itemize}
-  % default pooling settings of bert as a service: mean of the second to last layer
-  \item \textit{BERT embeddings}. From BERT is even possible to extract embeddings, which have the virtue of being contextual. For this purpose I used ``bert-as-a-service''. For extracting embeddings it uses different pooling strategies: with the default one, does a mean of the vectors of the second-to-last layer. Thus, the dimension of a sentence embedding is $768$, the dimension of a single embedding in BERT Base.
-  \item \textit{GloVe embeddings}. GloVe (Global Vectors for Word Representation) is a method of obtaining pre-trained embeddings from a corpus. GloVe is different from and better than its precursor, \textit{word2vec}. This because word2vec takes only local context into account: basically, it considers only words are inside a window span of the sentence.
+  \item \textit{BERT embeddings}. From BERT is even possible to extract embeddings, which have the virtue of being contextual. For this purpose I used ``bert-as-a-service'' \cite{baas}. For extracting embeddings it uses different pooling strategies: with the default one, does a mean of the vectors of the second-to-last layer. Thus, the dimension of a sentence embedding is $768$, the dimension of a single embedding in BERT Base.
+  \item \textit{GloVe embeddings}. GloVe (Global Vectors for Word Representation) is a method of obtaining pre-trained embeddings from a corpus \cite{glove}. GloVe is different from and better than its precursor, \textit{word2vec}. This because word2vec takes only local context into account: basically, it considers only words are inside a window span of the sentence \cite{word2vec}.
   
   On the contrary, GloVe tries both to capture meaning in vector space (like word2vec) and to use global count statistics instead of only local information. GloVe learns word embeddings using a co-occurrence matrix, taking in consideration only nonzero elements. The supported dimensions of GloVe embeddings are: 50, 100, 200, 300.
 \end{itemize}

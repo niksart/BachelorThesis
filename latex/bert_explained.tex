@@ -1,19 +1,18 @@
-Even if I did not personally fine-tuned BERT on SQuAD (I used DeepPavlov's pretrained BERT-SQuAD), in this subsection I will briefly outline the characteristics that made BERT a revolutionary model.
+Even if I did not personally fine-tuned BERT on SQuAD (I used DeepPavlov's pretrained BERT-SQuAD \cite{deeppavlov}), in this subsection I will briefly outline the characteristics that made BERT a revolutionary model.
 
-% https://arxiv.org/pdf/1810.04805.pdf
-BERT, which stands for Bidirectional Encoder Representations from Transformers, is a new language representation model. Even if BERT was presented to the research world in May 2019, it has yet obtained new state-of-the-art results on eleven natural language processing tasks. For instance, a finetuned BERT push SQuAD v1.1 question answering F1 Test to 93.2 (1.5 points of absolute improvement) and SQuAD v2.0 F1 Test to 83.1 (5.1 points of absolute improvement).
+BERT, which stands for Bidirectional Encoder Representations from Transformers, is a new language representation model. Even if BERT was presented to the research world in May 2019, it has yet obtained new state-of-the-art results on eleven natural language processing tasks. For instance, a finetuned BERT push SQuAD v1.1 question answering F1 Test to 93.2 (1.5 points of absolute improvement) and SQuAD v2.0 F1 Test to 83.1 (5.1 points of absolute improvement) \cite{bert}.
 
 The training framework proposed by Devlin et al., the authors of BERT, is composed of two steps: \textit{pre-training} and \textit{fine-tuning}. During pre-training BERT is trained over different pre-training tasks. The fine-tuning is only over a single downstream task, in our case, the SQuAD task.
 
 % https://arxiv.org/pdf/1706.03762.pdf
-BERT’s  model  architecture is a multi-layer bidirectional Transformer encoder. These last components, that are the building blocks of BERT, are implemented as described in the paper \textit{Attention Is All You Need} by Vaswani et al..
+BERT’s  model  architecture is a multi-layer bidirectional Transformer encoder. These last components, that are the building blocks of BERT, are implemented as described in the paper \textit{Attention Is All You Need} by Vaswani et al. \cite{attentionisallyouneed}.
 
 Considering BERT Base, the size taken in consideration for this project (the choice was between Base and Large), the hidden layers (i.e. Transformers encoders) are 12, the hidden size is 768 and the number of self-attention heads is 12.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=18cm]{bert-for-squad-original-paper}
-\caption{Overall pre-training and fine-tuning procedures for BERT. The pre-training procedure provides a basis for the numerous possible downstream tasks. \texttt{[CLS]}, which stands for ``classification'', is a special symbol added in front of every input example, and \texttt{[SEP]} is a special separator token. For further information about the input representation, please read the paper linked in bibliography (this image was taken by that paper).}
+\caption{Overall pre-training and fine-tuning procedures for BERT. The pre-training procedure provides a basis for the numerous possible downstream tasks. \texttt{[CLS]}, which stands for ``classification'', is a special symbol added in front of every input example, and \texttt{[SEP]} is a special separator token. For further information about the input representation, please read the paper linked in the references. This image is extracted by that paper (\cite{bert}).}
 \medskip
 \label{fig:bertsquad}
 \end{figure}
@@ -27,12 +26,12 @@ Briefly, pre-training BERT means training it on two tasks:
 
 % https://arxiv.org/pdf/1606.05250.pdf
 \subsubsection{A dataset for Reading Comprehension: SQuAD}
-In the fine-tuning stage BERT is trained on SQuAD, a dataset for Reading Comprehension developed by Stanford University. It consists in a collection of $100\,000$ question-answer pairs over different Wikipedia passages. There are two versions of SQuAD: the first version (\texttt{v1.1}) contains only questions over a passage that have an answer, while the second version (\texttt{v2.0}) have some questions without answer. Obviously, doing better on SQuAD 2.0 is more difficult, because it requires a minimum level of reasoning.
+In the fine-tuning stage BERT is trained on SQuAD, a dataset for Reading Comprehension developed by Stanford University \cite{squad}. It consists in a collection of $100\,000$ question-answer pairs over different Wikipedia passages. There are two versions of SQuAD: the first version (\texttt{v1.1}) contains only questions over a passage that have an answer, while the second version (\texttt{v2.0}) have some questions without answer. Obviously, doing better on SQuAD 2.0 is more difficult, because it requires a minimum level of reasoning.
 
 \subsubsection{Fine-tuning BERT on SQuAD1.1}
 As illustrated in Figure \ref{fig:bertsquad}, during fine-tuning passage and question are both passed to BERT (separated by the \texttt{[SEP]} tag). This phase introduces two trainable vectors: $S$ (for the start of the answer) and $E$ (for the end of the answer) both of dimension $\mathbb{R}^\mathbb{H}$ ($\mathbb{H}$ is the hidden size, $768$ for BERT Base). 
 
-The probability of a token $i$ of being the start of the answer is $P_{i} = \frac{\mathrm{e}^{S \cdot T_{i}}}{\sum_{j} \mathrm{e}^{S \cdot T_{j}}}$, where $T$ here represents the last layer of BERT. The analogous formula is used for the end of the answer. The score of a candidate span that goes from token $i$ to token $j$ is defined as $score_{i, j} = S \cdot T_{i} + E \cdot T_{j}$. The maximum score where $j \geq i$ is used as prediction. Finally, the training objective is defined as the sum of the two log-likelihoods \eqref{eqn:loglikelihood} of the correct start and end positions. 
+The probability of a token $i$ of being the start of the answer is $P_{i} = \frac{\mathrm{e}^{S \cdot T_{i}}}{\sum_{j} \mathrm{e}^{S \cdot T_{j}}}$, where $T$ here represents the last layer of BERT. The analogous formula is used for the end of the answer. The score of a candidate span that goes from token $i$ to token $j$ is defined as $score_{i, j} = S \cdot T_{i} + E \cdot T_{j}$. The maximum score where $j \geq i$ is used as prediction. Finally, the training objective is defined as the sum of the two log-likelihoods \eqref{eqn:loglikelihood} of the correct start and end positions.
 
 \begin{equation}
 \label{eqn:loglikelihood}

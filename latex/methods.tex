@@ -15,21 +15,20 @@ In this chapter I will describe in detail the methods used in order to achieve t
 \subsection{The body part list}
 The objective of this component is to identify body parts words within the patient's sentence. For doing so, it is obviously necessary to have a list of body parts. In addition, each body part can be expressed by the patient using a large variety of terms (its synonyms). Hence, with the addition of an abstraction layer, the list of body parts becomes a list of body parts concepts; and each body part concept is associated with a list of its synonyms. Another problem to face is that the language of this body parts classification should be at “patient level”: therefore it has to be informal and not strictly medical.
 
-Unfortunately, I did not find any body part classification with these features. Therefore, the only chance for me was to produce my own classification, starting my work from the numerous informal body part lists that I found searching the Web. I based my classification mainly on the Wikipedia's list of body parts[], which I completed with other missing body parts found in other lists. I understand the licit perplexities that this approach may arise. However, in my opinion, what really matters is that, even with this amateur list of body parts, the results make my proof of concept creditable, as we will see in the next chapter. The classification is composed of [130] body parts saved in a csv file.
+Unfortunately, I did not find any body part classification with these features. Therefore, the only chance for me was to produce my own classification, starting my work from the numerous informal body part lists that I found searching the Web. I based my classification mainly on the Wikipedia's list of body parts \cite{bodypartswiki}, which I completed with other missing body parts found in other lists. I understand the licit perplexities that this approach may arise. However, in my opinion, what really matters is that, even with this amateur list of body parts, the results make my proof of concept creditable, as we will see in the next chapter. The classification is saved in a csv file.
 
 \subsection{Finding a body part in a sentence}
 Finding a body part in a sentence is quite easy if you have an exhaustive list of body parts and the respective synonyms. The code does nothing more than a string matching between each word in the sentence and each synonym present inside the classification. This approach is simple but not perfect: for example, the word “back” is both a preposition and a body part. Therefore, looking only at words means forgetting the context: this may introduce misunderstandings and lower the quality of the results.
-%% TODO scrivo che c'e' da migliorare
 
 \section{Question-Answering system}
 \label{sec:qa_system}
-The outcome of the \textit{Body Part Finder} is then passed to the \textit{QA system}, whose basic aim is to give an answer to questions like “What are the symptoms in the sentence?” or “What is the problem with the neck?”. If the reader has never heard of Machine Reading Comprehension, this may seem magic. However, fortunately, as we will see in this section, it is not.
+The outcome of the \textit{Body Part Finder} is then passed to the \textit{QA system}, whose basic aim is to give an answer to questions like ``What are the symptoms in the sentence?'' or ``What is the problem with the neck?''. If the reader has never heard of \textit{Machine Reading Comprehension}, this may seem magic. However, fortunately, as we will see in this section, it is not.
 
 \subsection{Types of questions}
 The questions asked to the specified model over each sentence are of two types:
 \begin{enumerate}
-  \item generic question about the symptoms in the sentence (“What are the symptoms?”)
-  \item specific question about the problem of a found body part in the sentence (“What is the problem with the [body part]?”)
+  \item generic question about the symptoms in the sentence (``What are the symptoms?'')
+  \item specific question about the problem of a found body part in the sentence (``What is the problem with the \texttt{[body part]}?'')
 \end{enumerate}
 
 The question over the symptoms is intentionally generic because its aim is to catch the majority of the symptoms within the sentence. Thus, as we will see in the next section, the answer to this question should be interpreted.
@@ -83,8 +82,8 @@ As mentioned in section \ref{sec:cla_symp}, the relationships between every chil
 \medskip
 \end{figure}
 
-
 \section{Dataset}
+%TODO
 site I visited
 "extrapolating sentences within the posts" in which there were classifiable symptoms wrt the classification
 format of the sentences: xml tags, sentence tag

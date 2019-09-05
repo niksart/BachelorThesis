@@ -1,51 +1,167 @@
-% book
-% Required fields: author or editor, title, publisher, year. 
-% Optional fields: volume or number, series, address, edition, month, note.
-@book{coulouris,
-  author = {Coulouris  G.  F.,  Dollimore J. e  Kindberg T},
-  title = {Distributed Systems: concepts and Design},
-  publisher = {Addison-Wesley},
-  year = {1994},
-  edition = "second edition"
-
+%%%%%% introduction
+@article{sinsky,
+  title={Allocation of physician time in ambulatory practice: a time and motion study in 4 specialties},
+  author={Sinsky, Christine and Colligan, Lacey and Li, Ling and Prgomet, Mirela and Reynolds, Sam and Goeders, Lindsey and Westbrook, Johanna and Tutty, Michael and Blike, George},
+  journal={Annals of internal medicine},
+  volume={165},
+  number={11},
+  pages={753--760},
+  year={2016},
+  publisher={Am Coll Physicians}
 }
 
-% article
-% Required fields: author, title, journal, year. 
-% Optional fields: volume, number, pages, month, note.
-@article{donoho,
-  author = {Donoho D. L.},
-  title = {Compressed Sensing},
-  journal = {IEEE Trans. Inf. Theory},
-  volume = {52},
-  number = {4},
-  pages = {1289-1306},
-  year = {2006}
+@article{hampton1975,
+  title={Relative contributions of history-taking, physical examination, and laboratory investigation to diagnosis and management of medical outpatients.},
+  author={Hampton, John R and Harrison, MJ and Mitchell, John R and Prichard, Jane S and Seymour, Carol},
+  journal={Br Med J},
+  volume={2},
+  number={5969},
+  pages={486--489},
+  year={1975},
+  publisher={British Medical Journal Publishing Group}
 }
 
-% conference
-% same as inproceedings
-% Required fields: author, title, booktitle, year. 
-% Optional fields: editor, volume or number, series, pages, address, month, organization, publisher, note
-@conference{dalal,
-  author = {Dalal N., Triggs B.},
-  title = {Histograms of Oriented Gradients for Human Detection},
-  booktitle = {Computer Vision and Pattern Recognition (CVPR)},
-  address = {San Diego, USA},
-  year = {2005},
-  month = {20-26 June},
-  pages = {886-893}
+@unpublished{johndocument,
+	author	= "John Michael Mendoza and Fabio Casati and Marcos Baez and Shelley Ann Dela Vega and Jose Alvin Mojica and Angely Garcia and Enrico Soprano",
+	title	= "{Evaluation of the Chatbot Automated Medical History Taking System at the Philippine General Hospital}",
+	year	= "2018",
+	month	= "January",
+	note	= "Institute on Aging, National Institute of Health – University of the Philippines Manila; Department of Information Engineering and Science - University of Trento, Italy; Department of Rehabilitation Medicine, University of the Philippines Manila – Philippine General Hospital",
 }
 
-% website
-% as misc
-% Required fields: none. 
-% Optional fields: author, title, howpublished, month, year, note.
-@misc{ictbusiness,
-  title = {ICT business},
-  howpublished = {http://www.ictbusiness.it/},
-  note = {ultimo accesso 15/06/2015}
+@misc{historytakingwiki,
+  title = {{Medical History}},
+  howpublished = {https://en.wikipedia.org/wiki/Medical\_history},
+  note = {Last access 21/08/2019}
 }
 
+@misc{bodypartswiki,
+  title = {Glossary of medicine},
+  howpublished = {https://en.wikipedia.org/wiki/Glossary\_of\_medicine},
+  note = {Last access 29/07/2019}
+}
 
+@misc{imagernetoverview,
+  title = "{R-NET: Machine Reading Comprehension With Self-Matching Networks}",
+  howpublished = {https://slideplayer.com/slide/12351679/},
+  note = {8th slide. Last access 29/07/2019}
+}
+
+@book{medcin,
+  title="{MEDCIN: a new nomenclature for clinical medicine}",
+  author={Goltra, Peter S},
+  year={2012},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{umls,
+  title="{The unified medical language system (UMLS): integrating biomedical terminology}",
+  author={Bodenreider, Olivier},
+  journal={Nucleic acids research},
+  volume={32},
+  number={suppl\_1},
+  pages={D267--D270},
+  year={2004},
+  publisher={Oxford University Press}
+}
+
+@article{squad,
+  title={Squad: 100,000+ questions for machine comprehension of text},
+  author={Rajpurkar, Pranav and Zhang, Jian and Lopyrev, Konstantin and Liang, Percy},
+  journal={arXiv preprint arXiv:1606.05250},
+  year={2016}
+}
+
+@inproceedings{glove,
+  author = {Jeffrey Pennington and Richard Socher and Christopher D. Manning},
+  booktitle = "{Empirical Methods in Natural Language Processing (EMNLP)}",
+  title = {GloVe: Global Vectors for Word Representation},
+  year = {2014},
+  pages = {1532--1543},
+  url = {http://www.aclweb.org/anthology/D14-1162},
+}
+
+@article{bert,
+  title={Bert: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  journal={arXiv preprint arXiv:1810.04805},
+  year={2018}
+}
+
+@inproceedings{rnet,
+  title={Gated self-matching networks for reading comprehension and question answering},
+  author={Wang, Wenhui and Yang, Nan and Wei, Furu and Chang, Baobao and Zhou, Ming},
+  booktitle={Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={189--198},
+  year={2017}
+}
+
+@misc{understandingrnet,
+  title = "{Understanding R-NET, Microsoft's superhuman reading AI}",
+  howpublished = {https://codeburst.io/understanding-r-net-microsofts-superhuman-reading-ai-23ff7ededd96},
+  note = {The following example is extracted from this blog post. Last access 25/08/2019}
+}
+
+@inproceedings{deeppavlov,
+  title="{DeepPavlov: open-source library for dialogue systems}",
+  author={Burtsev, Mikhail and Seliverstov, Alexander and Airapetyan, Rafael and Arkhipov, Mikhail and Baymurzina, Dilyara and Bushkov, Nickolay and Gureenkova, Olga and Khakhulin, Taras and Kuratov, Yuri and Kuznetsov, Denis and others},
+  booktitle={Proceedings of ACL 2018, System Demonstrations},
+  pages={122--127},
+  year={2018}
+}
+
+@inproceedings{attentionisallyouneed,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  booktitle={Advances in neural information processing systems},
+  pages={5998--6008},
+  year={2017}
+}
+
+@misc{snowballstemmer,
+  title={Snowball: A language for stemming algorithms},
+  author={Porter, Martin F},
+  year={2001}
+}
+
+@article{nltk,
+  title="{NLTK: the natural language toolkit}",
+  author={Loper, Edward and Bird, Steven},
+  journal={arXiv preprint cs/0205028},
+  year={2002}
+}
+
+@inproceedings{stanfordnlp,
+  title="{The Stanford CoreNLP natural language processing toolkit}",
+  author={Manning, Christopher and Surdeanu, Mihai and Bauer, John and Finkel, Jenny and Bethard, Steven and McClosky, David},
+  booktitle={Proceedings of 52nd annual meeting of the association for computational linguistics: system demonstrations},
+  pages={55--60},
+  year={2014}
+}
+
+@misc{baas,
+  title = {\texttt{bert-as-a-service}},
+  howpublished = {https://github.com/hanxiao/bert-as-service},
+  note = {Last access 29/08/2019}
+}
+
+@misc{anytree,
+  title = {\texttt{anytree}},
+  howpublished = {https://github.com/c0fec0de/anytree},
+  note = {Last access 13/08/2019}
+}
+
+@misc{poolingstrategies,
+  title = "{Illustrated BERT}",
+  howpublished = {http://jalammar.github.io/illustrated-bert/},
+  note = {Last access 17/08/2019}
+}
+
+@inproceedings{word2vec,
+  title={Distributed representations of words and phrases and their compositionality},
+  author={Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff},
+  booktitle={Advances in neural information processing systems},
+  pages={3111--3119},
+  year={2013}
+}
 
