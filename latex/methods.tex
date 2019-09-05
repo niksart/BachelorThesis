@@ -83,7 +83,7 @@ As mentioned in section \ref{sec:cla_symp}, the relationships between every chil
 \end{figure}
 
 \section{Dataset}
-%TODO
-site I visited
-"extrapolating sentences within the posts" in which there were classifiable symptoms wrt the classification
-format of the sentences: xml tags, sentence tag
+\label{sec:dataset}
+In order to create a suitable dataset for this project, as mentioned in section \ref{datasetintro}, I personally extracted and tagged sentences from posts of a medical forum. This forum is named ``Doctors Lounge'' \cite{doctorslounge} and classifies its posts by topic. During the extraction and tagging process I focused on six categories: chest symptoms; ear, nose and throat symptoms; eyes symptoms; gastroenteric symptoms; headaches; pediatric symptoms and back symptoms.
+
+Extrapolating a sentence within a post means finding a sentence which contains an identifiable and classifiable symptom and tagging it with the relative CUI. The dataset's format is an XML with two types of tags: the \texttt{sentence} tag and the \texttt{symptom} tag (which has an attribute ``\texttt{CUI}'' used for linking the CUI to the symptom text).
