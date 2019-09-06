@@ -73,6 +73,7 @@ However, some more measures could help to understand the real performances of th
 \end{center}
 
 \section{Evaluation of the Symptom Classifier}
+\label{sec:evalsymptomclassifier}
 \subsection{Definitions and notation}
 
 The expression ``$\texttt{real cuis}_{i}$'' refers to the list of real symptom CUIs of the i-th sentence. Analogously, the expression ``$\texttt{predicted cuis}_{i}$'' refers to the list of predicted CUIs of the i-th sentence.
@@ -117,8 +118,9 @@ The fourth measure represents the \texttt{missed symptoms}. Even if it is not in
 \texttt{missed symptoms} = \sum_{i}{\texttt{\#real cuis}_{i}} - \sum_{i}{\texttt{\#correct}^{\texttt{NR}}_{i}}
 \end{equation}
 
-\newpage
+%%%%%%%%%%\newpage
 \subsection{Evaluation of different options}
+\label{sec:evaluationoptions}
 In this subsection I will show and analyze individually every option of the Symptom Classifier. Those are: the embedding type, if using or not the \textit{Body Part Finder}, if using or not the ``pruning'' option, if using or not the \textit{filter for ``unuseful words''} and the \textit{minimum similarity} level.
 
 \subsubsection{Comparing different types of embeddings}

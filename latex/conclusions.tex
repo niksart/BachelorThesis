@@ -1,19 +1,32 @@
 \chapter{Conclusions}
 \label{cha:conclusions}
-%TODO
 
-%%%%%%% USEFUL FOR FUTURE WORK
-% For example, there is no explicit concept for a "third degree burn of left index finger caused by hot water". However, using the compositional syntax it can be represented as:
+In the previous chapter were presented and discussed the results of the two main components. Instead, in the following paragraphs is presented a global perspective of the performances. This because it is fruitful to determine which component has to be improved firstly.
 
-% \begin{verbatim}
-%    284196006 | burn of skin | :
-%    116676008 | associated morphology | = 80247002 | third degree burn injury |
-%  , 272741003 | laterality | = 7771000 | left |
-%  , 246075003 | causative agent | = 47448006 | hot water |
-%  , 363698007 | finding site | = 83738005 | index finger structure
-% \end{verbatim}
-%
-% BACK is both a preposition and a body part, then using contextual embeddings like bert finetuned or elmo embeddings could provide better results
-%%%%%%%
+The Symptom Identifier can identify, using BERT, the 88.0 \% of the symptoms present in the sentences. However, in the meantime, it generates a considerable number of non-sense tokens for predictions which are detrimental because they will be inputs of the next component: the Symptom Classifier.
 
-classification is medical, create a patient level classification => vectors representations of symptoms are too weak
+The Symptom Classifier takes in input the tokens for predictions originated by the previous component, of which 84.8 \% are correct (redundant and non-redundant), and outputs the CUI predictions based on them. Considering that the percentage of correct predictions is 48.0 \%, it is clear that the mapping is the main sub-component to perfect in order to improve the performance of the model.
+
+However, the results are overall satisfactory because even using an extremely simple vector representation of symptoms (the mean of the embeddings of the words inside the concept name of the symptom), the model reaches an accuracy of $58.7 \%$ and a percentage of correct predictions of $48 \%$, doing 1.5 medium attempts for each real symptom in the sentences \footnote{Results achieved using BERT for QA, GloVe 200, minimum similatity level set at 0.8, Body Part Finder and ``pruning'' enabled}. The fact that these results depend strictly on the vector representations of symptoms shows that there is much scope for improvement. For example, a weakness of the vector representations of symptoms is that of being biased to the medical language (they were computed using a sentence which contain medical terms). Hence, for raising the quality of these representations it is necessary to use instead the vectorization of symptom names expressed with the same language of a common patient. This is useful for moving close linguistically and semantically to the problem that the patient wants to express.
+
+A more radical modification of the last idea (but extremely difficult to realize) is that of creating a patient level classification of symptoms (independent from any language) and associating to each concept in this classification a list of expressions, which are the synonyms of the concept. For doing so it is necessary to collect a large quantity of patient's sentences, study how they express their problems and what is their common knowledge (and choose of course what it common knowledge and what is not).
+
+% use contextual embeddings
+Another possible future improvement could be the adoption of contextual embeddings. BERT embeddings are contextual; however, they did not outperform GloVe because they are not fine-tuned to a specific domain. These type of embeddings are particularly indicated for this project because many symptoms can be expressed with more than a word. Without contextual embeddings, for example, the embedding of ``back'' in ``my back hurts'' and ``the back of my shoulder'' is the same, but they refers clearly at two different meanings.
+
+Last improvement...
+% use compositional syntax
+
+    %%%%%%% USEFUL FOR FUTURE WORK
+    % For example, there is no explicit concept for a "third degree burn of left index finger caused by hot water". However, using the compositional syntax it can be represented as:
+
+    % \begin{verbatim}
+    %    284196006 | burn of skin | :
+    %    116676008 | associated morphology | = 80247002 | third degree burn injury |
+    %  , 272741003 | laterality | = 7771000 | left |
+    %  , 246075003 | causative agent | = 47448006 | hot water |
+    %  , 363698007 | finding site | = 83738005 | index finger structure
+    % \end{verbatim}
+    %
+    % BACK is both a preposition and a body part, then using contextual embeddings like bert finetuned or elmo embeddings could provide better results
+    %%%%%%%

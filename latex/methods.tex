@@ -8,34 +8,36 @@
 \newpage
 \chapter{Methods}
 \label{cha:methods}
-In this chapter I will describe in detail the methods used in order to achieve the results described in the next chapter. In the following sections I will analyze the abstract components illustrated in the Introduction.
+In this chapter, firstly, the Natural Language Processing methods used in this work are described in detail. Secondly, the abstract components are analyzed.
 
 \section{The \textit{Body Part Finder}}
 \label{sec:body_part_finder}
 \subsection{The body part list}
-The objective of this component is to identify body parts words within the patient's sentence. For doing so, it is obviously necessary to have a list of body parts. In addition, each body part can be expressed by the patient using a large variety of terms (its synonyms). Hence, with the addition of an abstraction layer, the list of body parts becomes a list of body parts concepts; and each body part concept is associated with a list of its synonyms. Another problem to face is that the language of this body parts classification should be at “patient level”: therefore it has to be informal and not strictly medical.
+The objective of this component is to identify body parts words within the patient's sentence. For this goal, it is necessary to have a list of body parts. In addition, each body part can be expressed by the patient using a large variety of terms: its synonyms. Hence, with the addition of an abstraction layer, the list of body parts becomes a list of body parts concepts. Each body part concept is then associated to a list of its synonyms. 
 
-Unfortunately, I did not find any body part classification with these features. Therefore, the only chance for me was to produce my own classification, starting my work from the numerous informal body part lists that I found searching the Web. I based my classification mainly on the Wikipedia's list of body parts \cite{bodypartswiki}, which I completed with other missing body parts found in other lists. I understand the licit perplexities that this approach may arise. However, in my opinion, what really matters is that, even with this amateur list of body parts, the results make my proof of concept creditable, as we will see in the next chapter. The classification is saved in a csv file.
+Another problem to face is that the language of the body parts classification should be understandable by every patient: therefore, it has to be informal and not strictly technical.
+
+At the moment, it is not available any body part classification with these features. Therefore, a new classification has been produced by the author. This classification is based mainly on the list of body parts found in \footnote{https://en.wikipedia.org/wiki/Glossary\_of\_medicine} \cite{bodypartswiki}. The classification is saved in a \begin{verbatim}.csv\end{verbatim} file.
 
 \subsection{Finding a body part in a sentence}
-Finding a body part in a sentence is quite easy if you have an exhaustive list of body parts and the respective synonyms. The code does nothing more than a string matching between each word in the sentence and each synonym present inside the classification. This approach is simple but not perfect: for example, the word “back” is both a preposition and a body part. Therefore, looking only at words means forgetting the context: this may introduce misunderstandings and lower the quality of the results.
+Finding a body part in a sentence is trivial if it is available an exhaustive list of body parts and the respective synonyms. The code does a simple string matching between each word in the sentence and each synonym present inside the classification. This approach has some drawbacks: for example, the word “back” can be both a preposition and a body part. Therefore, taking in consideration only words may lead to forget the context: this might introduce misunderstandings lowering the quality of the results.
 
-\section{Question-Answering system}
+\section{Question Answering system}
 \label{sec:qa_system}
-The outcome of the \textit{Body Part Finder} is then passed to the \textit{QA system}, whose basic aim is to give an answer to questions like ``What are the symptoms in the sentence?'' or ``What is the problem with the neck?''. If the reader has never heard of \textit{Machine Reading Comprehension}, this may seem magic. However, fortunately, as we will see in this section, it is not.
+The outcome of the \textit{Body Part Finder} is then passed to the \textit{QA system}. Its aim is highlighting, in the patient's sentence, the words that answers to a set of questions like \textit{What are the symptoms in the sentence?} or \textit{What is the problem with the neck?}. This task is called in literature \textit{Machine Reading Comprehension} \cite{rnet}.
 
 \subsection{Types of questions}
-The questions asked to the specified model over each sentence are of two types:
+The questions asked to the specified model over each sentence can be of two types:
 \begin{enumerate}
-  \item generic question about the symptoms in the sentence (``What are the symptoms?'')
-  \item specific question about the problem of a found body part in the sentence (``What is the problem with the \texttt{[body part]}?'')
+  \item generic question about the symptoms in the sentence: \textit{What are the symptoms?}
+  \item specific question about the problem of a found body part in the sentence: \textit{What is the problem with the }\texttt{[body part]}?
 \end{enumerate}
 
-The question over the symptoms is intentionally generic because its aim is to catch the majority of the symptoms within the sentence. Thus, as we will see in the next section, the answer to this question should be interpreted.
+The question over the symptoms is intentionally generic because its scope is to catch the majority of the symptoms within the sentence. Thus, as shown in section \ref{sec:answer_interpreter}, the answer to this question must be interpreted.
 
-At the same time, the question over a body part is deliberately specific. The logic behind this question is that if a patient refers to a body part during the interview, perhaps it is the subject of a problem.
+At the same time, the question over a body part is deliberately specific. The logic behind this question is that if a patient refers to a body part during the interview, can be the source of a problem.
 
-Here is a figure in order to understand the whole component:
+Figure \ref{fig:qa} shows the whole component.
 
 %% IMAGE ABOUT QA SYSTEM
 \begin{figure}[h]
@@ -43,9 +45,14 @@ Here is a figure in order to understand the whole component:
 \includegraphics[width=14cm]{qa_sys}
 \caption{The \textit{QA system} illustated.}
 \medskip
+\label{fig:qa}
 \end{figure}
 
-If we look at the answers of this figure, we can understand two problems: the model can sometimes provide an useful answer but too generic (this is the case of ``small bumps'') and might provide redundant answers, increasing unnecessarily the number of predictions.
+As shown in Figure \ref{fig:qa}, two problems may arise: 
+\begin{enumerate}
+  \item the model can sometimes provide an useful answer but too generic (this is the case of \textit{small bumps})
+  \item it might provide redundant answers, increasing unnecessarily the number of predictions.
+\end{enumerate}
 
 \subsection{BERT}
 \input{bert_explained}
@@ -84,6 +91,7 @@ As mentioned in section \ref{sec:cla_symp}, the relationships between every chil
 
 \section{Dataset}
 \label{sec:dataset}
-In order to create a suitable dataset for this project, as mentioned in section \ref{datasetintro}, I personally extracted and tagged sentences from posts of a medical forum. This forum is named ``Doctors Lounge'' \cite{doctorslounge} and classifies its posts by topic. During the extraction and tagging process I focused on six categories: chest symptoms; ear, nose and throat symptoms; eyes symptoms; gastroenteric symptoms; headaches; pediatric symptoms and back symptoms.
+%TODO prima persona
+As mentioned in section \ref{datasetintro}, in order to create a suitable dataset for this project, I personally extracted and tagged sentences from posts of a medical forum. This forum is named ``Doctors Lounge'' \cite{doctorslounge} and classifies its posts by topic. The extraction and tagging process focused on six categories: chest symptoms; ear, nose and throat symptoms; eyes symptoms; gastroenteric symptoms; headaches; pediatric symptoms and back symptoms.
 
 Extrapolating a sentence within a post means finding a sentence which contains an identifiable and classifiable symptom and tagging it with the relative CUI. The dataset's format is an XML with two types of tags: the \texttt{sentence} tag and the \texttt{symptom} tag (which has an attribute ``\texttt{CUI}'' used for linking the CUI to the symptom text).
