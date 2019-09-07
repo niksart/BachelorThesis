@@ -22,7 +22,7 @@ This section is dedicated to present a high level view of the work and the two m
 \label{sec:identifying_classifying}
 \subsection{Identifying symptoms}
 
-Identifying symptoms within a patient's sentence means finding, inside the text of the sentence, every group of adjacent words that carry together a coherent symptom concept. For instance:
+Identifying symptoms within a patient's sentence means finding, inside the text of the sentence, every group of adjacent words that carry together a coherent symptom concept.
 
 \begin{figure}[h]
 \centering
@@ -89,7 +89,6 @@ Up to now, there are not any suitable datasets for this project; therefore, for 
 
 \section{Brief description of results}
 \label{sec:brief_results}
-%TODO
-As shown in chapter \ref{cha:results}, BERT is better than R-NET in identifying symptoms. As a matter of fact, using BERT, the model can identify correctly the $84.8 \%$ of TFPs. This component, always using BERT, can identify the $88.0 \%$ of symptoms present in the sentences. To deepen the just mentioned measures, read section \ref{sec:eval_symptom_identifier}.
+As shown in chapter \ref{cha:results}, BERT is better than R-NET in identifying symptoms. As a matter of fact, using BERT, the percentage of correct tokens is $84.8 \%$, while, using R-NET it is of $70.4 \%$ ($+ 14.4 \%$ of improvement). BERT for QA outperforms R-NET even in other indices presented in section \ref{sec:eval_symptom_identifier}.
 
-In section \ref{sec:evalsymptomclassifier}, any option of the Symptom Classifier is analyzed one by one: this means testing the model with different embedding types, if using or not the Body Part Finder and other options such as .... that will be treated in section \ref{sec:evalsymptomclassifier}.
+In section \ref{sec:evalsymptomclassifier}, any option of the Symptom Classifier is analyzed one by one: this means testing the model with different embedding types, if using or not the Body Part Finder and other options such as \textit{pruning}, filtering ``useless words'' and the minimum similarity threshold that will be treated in the corresponding section.

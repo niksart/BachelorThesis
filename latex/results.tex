@@ -28,7 +28,8 @@ Table \ref{tab:bertrnet} compares BERT and R-NET.
 \definecolor{red}{rgb}{1,0.89,0.89}
 
 \begin{center}
-  \begin{table}
+  \begin{table}[h]
+  \centering
      \begin{tabular}{| c | c | c | c |} 
      \hline
      \# of & BERT & R-NET \\ [0.5ex] 
@@ -57,7 +58,9 @@ Table \ref{tab:bertrnet} compares BERT and R-NET.
 
 The results, and, in particular, the score measure, suggest that BERT is consistently better for this task. For this reason the outcome of BERT for QA was used as input for the evaluation of the Symptom Classifier.
 
-In order to better visualize the outcome of BERT and R-NET, some more indices, shown in table \ref{moreindicesbertrnet}, has been calculated. These are:
+In order to better visualize the outcome of BERT and R-NET, some more indices, shown in table \ref{tab:moreindicesbertrnet}, has been calculated. 
+\newpage
+These are:
 \begin{enumerate}
   \item the fraction of \texttt{redundant} and \texttt{non-redundant correct tokens} over the total number of tokens;
   \item the fraction of \texttt{non-redundant correct tokens} over the total number of tokens;
@@ -67,7 +70,8 @@ In order to better visualize the outcome of BERT and R-NET, some more indices, s
 \newcolumntype{C}{ >{\centering\arraybackslash} m{4cm} }
 \newcolumntype{D}{ >{\centering\arraybackslash} m{2cm} }
 \begin{center}
- \begin{table}
+ \begin{table}[h]
+ \centering
      \begin{tabular}{| C | D | D |}
      \hline
      measures & BERT & R-NET \\ [1ex] 
@@ -136,16 +140,17 @@ Some new indices has been developed in order to evaluate the performance of this
 
 \end{enumerate}
 
-%%%%%%%%%%\newpage
+\newpage
 \subsection{Evaluation of different options}
 \label{sec:evaluationoptions}
 This subsection analyzes individually every option of the Symptom Classifier. These are: 
 \begin{itemize}
-  \item the embedding type
-  \item \textit{Body Part Finder}
+  \item the embeddings type
+  \item the \textit{Body Part Finder}
   \item ``pruning''
-  \item the filter for ``useless words''
-  \item \textit{minimum similarity} threshold
+  \item filtering ``useless words''
+  \item the introduction of a \textit{minimum similarity} threshold
+\end{itemize}
 
 \subsubsection{Comparison of different types of embeddings}
 
@@ -163,23 +168,25 @@ This subsection analyzes individually every option of the Symptom Classifier. Th
 \end{figure}
 
 \begin{center}
- \begin{tabular}{| c | c | c | c | c | c |} 
- \hline
- \thead{\texttt{embedding}\\\texttt{type}} & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{harmonic}\\\texttt{mean}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
- \hline\hline
- \texttt{GloVe 50} & 55.5 \% & 40.1 \% & 46.5 \% & 1.8 & 208 \\ 
- \hline
- \texttt{GloVe 100} & 55.2 \% & 39.1 \% & 45.8 \% & 1.8 & 209 \\
- \hline
- \texttt{GloVe 200} & 59.1 \% & 43.7 \% & 50.2 \% & 1.8 & 191 \\
- \hline
- \texttt{GloVe 300} & 59.3 \% & 42.2 \% & 49.3 \% & 1.8 & 190 \\
- \hline
- \texttt{BERT emb.} & 46.7 \% & 32.9 \% & 38.6 \% & 1.8 & 249 \\
- \hline
-\end{tabular}
-\caption{Comparison of different types of embeddings using different indices.}
-\label{tab:comparison_emb}
+ \begin{table}[h]
+ \centering
+   \begin{tabular}{| c | c | c | c | c | c |} 
+   \hline
+   \thead{\texttt{embedding}\\\texttt{type}} & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{harmonic}\\\texttt{mean}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
+   \hline\hline
+   \texttt{GloVe 50} & 55.5 \% & 40.1 \% & 46.5 \% & 1.8 & 208 \\ 
+   \hline
+   \texttt{GloVe 100} & 55.2 \% & 39.1 \% & 45.8 \% & 1.8 & 209 \\
+   \hline
+   \texttt{GloVe 200} & 59.1 \% & 43.7 \% & 50.2 \% & 1.8 & 191 \\
+   \hline
+   \texttt{GloVe 300} & 59.3 \% & 42.2 \% & 49.3 \% & 1.8 & 190 \\
+   \hline
+   \texttt{BERT emb.} & 46.7 \% & 32.9 \% & 38.6 \% & 1.8 & 249 \\
+   \hline
+  \end{tabular}
+ \caption{\label{tab:comparison_emb}Comparison of different types of embeddings using different indices.}
+ \end{table}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
@@ -191,7 +198,7 @@ The \texttt{medium attempts} are all equal because the options that cause a decr
 BERT embeddings do not perform as good as GloVe embeddings: this is due to the fact that they were extracted from a non-finetuned BERT, which has not been trained on any medical corpus.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
+
 \subsubsection{Ablation test for the Body Part Finder}
 
 \begin{figure}[h]%[!tbp]
@@ -208,16 +215,19 @@ BERT embeddings do not perform as good as GloVe embeddings: this is due to the f
 \end{figure}
 
 \begin{center}
- \begin{tabular}{| c | c | c | c | c |} 
- \hline
-  & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
- \hline\hline
- \texttt{search} & 59.1 \% & 43.7 \% & 1.8 & 191 \\
- \hline
- \texttt{no search} & 39.8 \% & 42.2 \% & 0.9 & 281 \\
- \hline
-\end{tabular}
-\caption{Indexes comparison when the Body Part Finder is enabled (\texttt{search}) and when it is not (\texttt{no search}).}
+ \begin{table}[h]
+ \centering
+   \begin{tabular}{| c | c | c | c | c |} 
+   \hline
+    & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
+   \hline\hline
+   \texttt{search} & 59.1 \% & 43.7 \% & 1.8 & 191 \\
+   \hline
+   \texttt{no search} & 39.8 \% & 42.2 \% & 0.9 & 281 \\
+   \hline
+  \end{tabular}
+  \caption{Indexes comparison when the Body Part Finder is enabled (\texttt{search}) and when it is not (\texttt{no search}).}
+ \end{table}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
@@ -245,16 +255,19 @@ The percentage of $\texttt{correct}^{\texttt{NR}}$ with respect to the total num
 \end{figure}
 
 \begin{center}
- \begin{tabular}{| c | c | c | c | c |} 
- \hline
-  & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
- \hline\hline
- \texttt{pruning} & 59.1 \% & 43.7 \% & 1.8 & 191 \\
- \hline
- \texttt{no pruning} & 43.7 \% & 36.0 \% & 1.8 & 263 \\
- \hline
-\end{tabular}
-\caption{Indexes comparison when the ``pruning'' option is enabled (\texttt{pruning}) and when it is not (\texttt{no pruning}).}
+ \begin{table}[h]
+ \centering
+   \begin{tabular}{| c | c | c | c | c |} 
+   \hline
+    & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
+   \hline\hline
+   \texttt{pruning} & 59.1 \% & 43.7 \% & 1.8 & 191 \\
+   \hline
+   \texttt{no pruning} & 43.7 \% & 36.0 \% & 1.8 & 263 \\
+   \hline
+  \end{tabular}
+ \caption{Indexes comparison when the ``pruning'' option is enabled (\texttt{pruning}) and when it is not (\texttt{no pruning}).}
+ \end{table}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
@@ -279,16 +292,19 @@ It is evident that this component contributes positively to the results. This be
 \end{figure}
 
 \begin{center}
- \begin{tabular}{| c | c | c | c | c |} 
- \hline
-  & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
- \hline\hline
- \texttt{filter} & 59.1 \% & 43.7 \% & 1.8 & 191 \\
- \hline
- \texttt{no filter} & 59.1 \% & 43.9 \% & 1.8 & 191 \\
- \hline
-\end{tabular}
-\caption{Indexes comparison when the filtering ``useless words'' option is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
+ \begin{table}[h]
+ \centering
+   \begin{tabular}{| c | c | c | c | c |} 
+   \hline
+    & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
+   \hline\hline
+   \texttt{filter} & 59.1 \% & 43.7 \% & 1.8 & 191 \\
+   \hline
+   \texttt{no filter} & 59.1 \% & 43.9 \% & 1.8 & 191 \\
+   \hline
+  \end{tabular}
+  \caption{Indexes comparison when the filtering ``useless words'' option is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
+ \end{table}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
@@ -313,23 +329,25 @@ This option shows to be completely ineffective. This can be due to the fact that
 \end{figure}
 
 \begin{center}
- \begin{tabular}{| c | c | c | c | c |} 
- \hline
-  \thead{\texttt{minimum}\\\texttt{similarity}} & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
- \hline\hline
- \texttt{0.00} & 59.1 \% & 43.7 \% & 1.8 & 191 \\ 
- \hline
- \texttt{0.70} & 59.1 \% & 45.1 \% & 1.7 & 191 \\
- \hline
- \texttt{0.80} & 58.7 \% & 48.0 \% & 1.5 & 193 \\
- \hline
- \texttt{0.90} & 36.8 \% & 54.7 \% & 0.8 & 295 \\
- \hline
- \texttt{0.95} & 30.6 \% & 55.3 \% & 0.7 & 324 \\
- \hline
-\end{tabular}
-\caption{Indexes comparison when different minimum similarity thresholds are used.}
-\label{tab:minsim}
+ \begin{table}[h]
+ \centering
+   \begin{tabular}{| c | c | c | c | c |} 
+   \hline
+    \thead{\texttt{minimum}\\\texttt{similarity}} & \thead{\texttt{accuracy}} & \thead{\texttt{correct}\\\texttt{predictions}} & \thead{\texttt{medium}\\\texttt{attempts}} & \thead{\texttt{missed}\\\texttt{symptoms}} \\ [0.5ex] 
+   \hline\hline
+   \texttt{0.00} & 59.1 \% & 43.7 \% & 1.8 & 191 \\ 
+   \hline
+   \texttt{0.70} & 59.1 \% & 45.1 \% & 1.7 & 191 \\
+   \hline
+   \texttt{0.80} & 58.7 \% & 48.0 \% & 1.5 & 193 \\
+   \hline
+   \texttt{0.90} & 36.8 \% & 54.7 \% & 0.8 & 295 \\
+   \hline
+   \texttt{0.95} & 30.6 \% & 55.3 \% & 0.7 & 324 \\
+   \hline
+  \end{tabular}
+ \caption{\label{tab:minsim}Indexes comparison when different minimum similarity thresholds are used.}
+ \end{table}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
