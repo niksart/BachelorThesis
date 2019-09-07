@@ -61,19 +61,19 @@ Find an appropriate mapping for a \textit{token for prediction} is not a trivial
 This section will briefly outline the methods that has been developed and the technologies that has been used. Then, chapter \ref{cha:methods} will deepen more into the details of the components listed below.
 
 \subsection*{Symptom identifier}
-The abstract component \textit{symptom identifier} is made up of three sub-components:
+The abstract component \textit{Symptom Identifier} is made up of three sub-components:
 \begin{itemize}
-  \item a \textit{body part finder}. Its aim is to identify words that are common body parts inside the sentence. The purpose is to find them and later inform the next component about the body parts that appeared within the sentence;
-  \item a \textit{Question Answering (QA) system}. The objective of this component is, given a set of questions, to answer them highlighting the parts of the sentence which respond to each question. This task is called \textit{Maching Reading Comprehension} and can be done with these two supported models:
+  \item a \textit{Body Part Finder}. Its aim is to identify words that are common body parts inside the sentence. The purpose is to find them and later inform the next component about the body parts that appeared within the sentence;
+  \item a \textit{Question Answering (QA) system}. The objective of this component is, given a set of questions, aswering them highlighting the parts of the sentence which respond to each question. This task is called \textit{Maching Reading Comprehension} and can be done with these two supported models:
     \begin{enumerate}
       \item \textit{BERT}, that stands for \textit{Bidirectional Encoder Representations from Transformers} \cite{bert}, finetuned on \textit{SQuAD} (a Reading Comprehension dataset developed by Stanford University) \cite{squad};
       \item \textit{R-NET}, an end-to-end neural networks model for Reading Comprehension developed by Microsoft  \cite{rnet};
     \end{enumerate}
-  \item an \textit{Answer Interpreter}. In this stage the answers of the previous component (the \textit{QA system}) become \textit{tokens for predictions}; this prepares them for the vectorization.
+  \item an \textit{Answer Interpreter}. In this stage the answers of the previous component (the \textit{QA system}) become \textit{tokens for predictions}: this prepares them for the vectorization.
 \end{itemize}
 
 \subsection*{Symptom classifier}
-The abstract component \textit{symptom classifier} is made up of two subcomponents:
+The abstract component \textit{symptom classifier} is made up of two sub-components:
 \begin{itemize}
   \item a \textit{Vectorifier}. The purpose of this component is encoding a given sentence into an embedding which can be of two types:
   \begin{enumerate}

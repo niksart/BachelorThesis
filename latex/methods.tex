@@ -8,7 +8,7 @@
 \newpage
 \chapter{Methods}
 \label{cha:methods}
-In this chapter, firstly, the Natural Language Processing methods used in this work are described in detail. Secondly, the abstract components are analyzed.
+In this chapter, firstly, the Natural Language Processing methods used in this work are described in detail. Secondly, the aforementioned sub-components are analyzed.
 
 \section{The \textit{Body Part Finder}}
 \label{sec:body_part_finder}
@@ -17,10 +17,10 @@ The objective of this component is to identify body parts words within the patie
 
 Another problem to face is that the language of the body parts classification should be understandable by every patient: therefore, it has to be informal and not strictly technical.
 
-At the moment, it is not available any body part classification with these features. Therefore, a new classification has been produced by the author. This classification is based mainly on the list of body parts found in \footnote{https://en.wikipedia.org/wiki/Glossary\_of\_medicine} \cite{bodypartswiki}. The classification is saved in a \begin{verbatim}.csv\end{verbatim} file.
+At the moment, it is not available any body part classification with these features. Therefore, a new classification based on the list of body parts found in \footnote{https://en.wikipedia.org/wiki/Glossary\_of\_medicine} \cite{bodypartswiki} has been produced by the author. The classification is saved in a \texttt{.csv} file.
 
 \subsection{Finding a body part in a sentence}
-Finding a body part in a sentence is trivial if it is available an exhaustive list of body parts and the respective synonyms. The code does a simple string matching between each word in the sentence and each synonym present inside the classification. This approach has some drawbacks: for example, the word “back” can be both a preposition and a body part. Therefore, taking in consideration only words may lead to forget the context: this might introduce misunderstandings lowering the quality of the results.
+Finding a body part in a sentence is trivial if it is available an exhaustive list of body parts and the respective synonyms. The code does a simple string matching between each word in the sentence and each synonym present inside the classification. This approach has some drawbacks: for example, the word “back” can be both a preposition and a body part. Therefore, taking in consideration only words may lead to forget the context: this might introduce misunderstandings, lowering the quality of the results.
 
 \section{Question Answering system}
 \label{sec:qa_system}
@@ -78,9 +78,9 @@ As shown in Figure \ref{fig:qa}, two problems may arise:
 
 \section{How to evaluate predictions?}
 \label{sec:eval_results}
-Once predictions are computed, the objective is evaluating them. The evaluation process is contextual to the sentence and it is based on a list of $m$ predictions ($[CUI_{p}1, CUI_{p}2, ..., CUI_{p}m]$) and a list of $n$ \emph{real CUIs}, that are the actual symptoms present in the sentence ($[CUI_{s}1, CUI_{s}2, ..., CUI_{s}n]$).
+Once predictions are computed, the objective is to evaluate them. This process is contextual to the sentence and it is based on a list of $m$ predictions ($[CUI_{p}1, CUI_{p}2, ..., CUI_{p}m]$) and a list of $n$ \emph{real CUIs} ($[CUI_{s}1, CUI_{s}2, ..., CUI_{s}n]$), that are the actual symptoms present in the sentence.
 
-As mentioned in section \ref{sec:cla_symp}, the relationships between every child and every father are ``is-a''. This means that a child symptom is always a specialization of its father. In other words, the child is equal to its father, but more detailed. Thus, a prediction is considered correct if it is located within a subtree rooted in a real CUI.
+As mentioned in section \ref{sec:cla_symp}, the relationships between every child and every father are of type \textit{is-a}. This means that a child symptom is always a specialization of its father; in other words, the child can be viewed as a subset of its father. Thus, a prediction is considered correct if it is located within a subtree rooted in any of the real CUIs.
 
 \begin{figure}[h]
 \centering
@@ -92,6 +92,15 @@ As mentioned in section \ref{sec:cla_symp}, the relationships between every chil
 \section{Dataset}
 \label{sec:dataset}
 %TODO prima persona
-As mentioned in section \ref{datasetintro}, in order to create a suitable dataset for this project, I personally extracted and tagged sentences from posts of a medical forum. This forum is named ``Doctors Lounge'' \cite{doctorslounge} and classifies its posts by topic. The extraction and tagging process focused on six categories: chest symptoms; ear, nose and throat symptoms; eyes symptoms; gastroenteric symptoms; headaches; pediatric symptoms and back symptoms.
+As mentioned in section \ref{datasetintro}, in order to create a suitable dataset for this project, the sentences extracted from a medical forum were linked to one or more symptoms. The used forum is \footnote{\url{https://www.doctorslounge.com/forums/}} \cite{doctorslounge} and classifies its posts by topic. The extraction and tagging process focused on six categories:
+\begin{enumerate}
+  \item chest
+  \item ear, nose and throat
+  \item eyes
+  \item gastroenteric
+  \item headaches
+  \item pediatric 
+  \item back
+\end{enumerate}
 
-Extrapolating a sentence within a post means finding a sentence which contains an identifiable and classifiable symptom and tagging it with the relative CUI. The dataset's format is an XML with two types of tags: the \texttt{sentence} tag and the \texttt{symptom} tag (which has an attribute ``\texttt{CUI}'' used for linking the CUI to the symptom text).
+Extrapolating a sentence within a post firstly means finding a passage in it which contains an identifiable and classifiable symptom and, secondly, tagging it with the relative CUI. The dataset's format is a \texttt{XML} with two types of tags: the \texttt{<sentence>} tag and the \texttt{<symptom>} tag, which has an attribute \texttt{CUI} used for linking the CUI to the symptom text.
