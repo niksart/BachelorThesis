@@ -1,4 +1,4 @@
-The aim of this component is taking the \textit{tokens for predictions} (the outcome of the Answer Interpreter) and with the help of the Vectorifier, output the most similar symptom's CUI.
+The aim of this component is taking the \textit{tokens for predictions} (the outcome of the Answer Interpreter) and, with the help of the Vectorifier, output the most similar symptom's CUI.
 
 In order to do this, each symptom inside the classification must have its representative vector of the same type and dimension of the vectorified \textit{token for prediction}. Since each symptom in the classification has a descriptive field (the ``concept name''), it has been treated like a sentence and, after the stemming, its vectorization has been chosen as representative vector. In order to hasten the whole process at runtime these representative vectors were precomputed for each supported type and dimension.
 
@@ -12,6 +12,6 @@ This phase is divided in two parts. The first one consists in passing to the Vec
 
 In the code there are two options that can change the algorithm described above:
 \begin{itemize}
-  \item as mentioned earlier, if the \textit{token for prediction} contains a body part, then the mapper searches only in subtrees related to that body part: \textit{pruning};
+  \item as mentioned earlier, if the \textit{token for prediction} contains a body part, then the mapper searches only in subtrees related to that body part: the \textit{pruning} option;
   \item a \textit{minimum similarity threshold}: if set, the prediction is output only if the highest similarity is more than this threshold. 
 \end{itemize}

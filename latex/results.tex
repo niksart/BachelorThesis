@@ -9,10 +9,10 @@ In order to evaluate the Symptom Identifier, the tokens for predictions of each 
   \item \texttt{correct} tokens: they contain an intelligible symptom that is also present in the patient's sentence;
   \item \texttt{redundant} tokens: when the token is correct but there is another token that has the same meaning;
   \item \texttt{non sense} tokens: they are not intelligible;
-  \item \texttt{wrong} tokens: they are deceptive because they contain an intelligible symptom but that is not present in the patient's sentence.
+  \item \texttt{wrong} tokens: they are deceptive because they contain an intelligible symptom that is not present in the patient's sentence.
 \end{itemize}
 
-For each sentence, the number of symptoms present in the sentence but not in the tokens were counted: \texttt{missing tokens}.
+For each sentence, the number of symptoms present in the sentence but not in the tokens were counted (the \texttt{missing} tokens).
 
 In order to choose the best model for future evaluations, a score metric that summarizes the performance of this component has been designed.\footnote{``\texttt{\#C}'' means ``total number of predictions belonging to class \texttt{C}''}:
 \begin{equation}
@@ -62,9 +62,9 @@ In order to better visualize the outcome of BERT and R-NET, some more indices, s
 \newpage
 These are:
 \begin{enumerate}
-  \item the fraction of \texttt{redundant} and \texttt{non-redundant correct tokens} over the total number of tokens;
-  \item the fraction of \texttt{non-redundant correct tokens} over the total number of tokens;
-  \item the fraction of \texttt{non-redundant correct tokens} over the sum of \texttt{non-redundant correct tokens} and \texttt{missing tokens}: it represents the percentage of identified symptoms.
+  \item the fraction of \texttt{redundant} and \texttt{correct} tokens over the total number of tokens;
+  \item the fraction of \texttt{correct} tokens over the total number of tokens;
+  \item the fraction of \texttt{correct} tokens over the sum of \texttt{correct} tokens and \texttt{missing} tokens: it represents the percentage of identified symptoms.
 \end{enumerate}
 
 \newcolumntype{C}{ >{\centering\arraybackslash} m{4cm} }
@@ -87,7 +87,7 @@ These are:
   \end{table}
 \end{center}
 
-The first index of table \ref{tab:moreindicesbertrnet} shows that BERT outperform R-NET by 14.4\%; however, the percentage of non-redundant correct tokens and the percentage of identified tokens are similar. This means that BERT produces more redundant correct tokens than R-NET, while R-NET outputs more non-sense tokens.
+The first index of table \ref{tab:moreindicesbertrnet} shows that BERT outperform R-NET by 14.4\%; however, the percentage of non-redundant correct tokens and the percentage of identified tokens are similar. This means that BERT produces more redundant tokens than R-NET, while R-NET outputs more non-sense tokens.
 
 \section{Evaluation of the Symptom Classifier}
 \label{sec:evalsymptomclassifier}
@@ -123,17 +123,17 @@ Some new indices has been developed in order to evaluate the performance of this
   \texttt{accuracy} = \frac{\sum_{i}{\texttt{\#correct}_{i}^{\texttt{NR}}}}{\sum_{i}{\texttt{\#real cuis}_{i}}}
   \end{equation}
 
-  \item \texttt{\% of correct predictions}: it is the fraction of the number of correct predictions (redundant and non-redundant) over the total number of predictions. It represents the probability, for a prediction, of being correct.
+  \item \texttt{\% of correct predictions}: it is the fraction of the number of correct predictions (redundant and non-redundant) over the total number of predictions. It represents the estimated probability, for a prediction, of being correct.
   \begin{equation}
   \texttt{\% of correct predictions} = \frac{\sum_{i}{\texttt{\#correct}_{i}}}{\sum_{i}{\texttt{\#predicted cuis}_{i}}}
   \end{equation}
 
-  \item \texttt{medium attempts}: it is computed as the total number of predictions over the total number of actual symptoms present in the sentences and represents the medium number of attempts that the model does for each symptom a the sentence.
+  \item \texttt{medium attempts}: it is computed as the total number of predictions over the total number of actual symptoms present in the sentences and represents the medium number of attempts that the model does for each symptom in the sentence. Ideally, this measure should be close to $1$ (a prediction for each \texttt{real CUI}).
   \begin{equation}
   \texttt{medium attempts} = \frac{\sum_{i}{\texttt{\#predicted cuis}_{i}}}{\sum_{i}{\texttt{\#real cuis}_{i}}}
   \end{equation}
 
-  \item \texttt{missed symptoms}: complementary to the \texttt{accuracy}, it can be useful to understand the number of missed tokens.
+  \item \texttt{missed symptoms}: complementary to \texttt{accuracy}, shows the number of missed tokens.
   \begin{equation}
   \texttt{missed symptoms} = \sum_{i}{\texttt{\#real cuis}_{i}} - \sum_{i}{\texttt{\#correct}^{\texttt{NR}}_{i}}
   \end{equation}
@@ -145,11 +145,11 @@ Some new indices has been developed in order to evaluate the performance of this
 \label{sec:evaluationoptions}
 This subsection analyzes individually every option of the Symptom Classifier. These are: 
 \begin{itemize}
-  \item the embeddings type
-  \item the \textit{Body Part Finder}
-  \item ``pruning''
-  \item filtering ``useless words''
-  \item the introduction of a \textit{minimum similarity} threshold
+  \item the embeddings type;
+  \item the \textit{Body Part Finder};
+  \item the \textit{pruning} option;
+  \item filtering ``useless words'';
+  \item the introduction of a \textit{minimum similarity} threshold.
 \end{itemize}
 
 \subsubsection{Comparison of different types of embeddings}
@@ -185,13 +185,13 @@ This subsection analyzes individually every option of the Symptom Classifier. Th
    \texttt{BERT emb.} & 46.7 \% & 32.9 \% & 38.6 \% & 1.8 & 249 \\
    \hline
   \end{tabular}
- \caption{\label{tab:comparison_emb}Comparison of different types of embeddings using different indices.}
+ \caption{\label{tab:comparison_emb}Comparison of different types of embeddings using different indices. The \texttt{harmonic mean} is between \texttt{accuracy} and \texttt{correct predictions}.}
  \end{table}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
-During this test different types of embeddings were compared. As shown in table \ref{tab:comparison_emb}, the performances of \texttt{GloVe 50} and \texttt{GloVe 100} are very similar (considering, for example, the harmonic mean between accuracy and correct predictions). However, \texttt{GloVe 200} introduced an improvement compared to \texttt{GloVe 100} (+ 3.9 \% of accuracy and + 4.6 \% of correct predictions ). This trend is also confirmed by \texttt{GloVe 300} (+ 4.1 \% of accuracy and + 3.1 \% of correct predictions). Looking at these results, \texttt{GloVe 200} was chosen as the default embedding type used for the following tests.
+During this test different types of embeddings were compared. As shown in table \ref{tab:comparison_emb}, the performances of \texttt{GloVe 50} and \texttt{GloVe 100} are very similar (considering, for example, the harmonic mean). However, \texttt{GloVe 200} introduced an improvement compared to \texttt{GloVe 100} (+ 3.9 \% of accuracy and + 4.6 \% of correct predictions ). This trend is also confirmed by \texttt{GloVe 300} (+ 4.1 \% of accuracy and + 3.1 \% of correct predictions). Looking at these results, \texttt{GloVe 200} was chosen as the default embedding type used for the following tests.
 
 The \texttt{medium attempts} are all equal because the options that cause a decrease of the number of predictions are not enabled: the Body Part Finder cause an increase of them and using zero level of minimum similarity does not affect the number of predictions.
 
@@ -282,12 +282,12 @@ It is evident that this component contributes positively to the results. This be
   \centering
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=9cm]{graphs/comparison_filtering}
-    \caption{Comparison of the composition of predictions when the filtering ``useless words'' option is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
+    \caption{Comparison of the composition of predictions when the filter of ``useless words'' is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=8cm]{graphs/comparison_filtering_missings}
-    \caption{Comparison of the \texttt{missing symptoms} when the filtering ``useless words'' option is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
+    \caption{Comparison of the \texttt{missing symptoms} when the filter of ``useless words'' is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
   \end{minipage}
 \end{figure}
 
@@ -303,18 +303,18 @@ It is evident that this component contributes positively to the results. This be
    \texttt{no filter} & 59.1 \% & 43.9 \% & 1.8 & 191 \\
    \hline
   \end{tabular}
-  \caption{Indexes comparison when the filtering ``useless words'' option is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
+  \caption{Indexes comparison when the filter of ``useless words'' is enabled (\texttt{filter}) and when it is not (\texttt{no filter}).}
  \end{table}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
-This option shows to be completely ineffective. This can be due to the fact that the Symptom Classifier considers all the possible subsentences of a token for prediction and maps the most similar to a symptom. This behavior already filters the so-called ``useless words'' because, generally, they are not used in the concept names of symptoms.
+This option shows to be completely ineffective. This can be due to the fact that the Symptom Classifier considers all the possible subsentences of a \textit{token for prediction} and maps the most similar to a symptom. This behavior already filters the so-called ``useless words'' because, generally, they are not used in the concept names of symptoms.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-\subsubsection{Comparing different levels of \textit{minimum similarity}}
+\subsubsection{Comparing different levels of \textit{minimum similarity thresholds}}
 \begin{figure}[h]%[!tbp]
   \centering
   \begin{minipage}[b]{0.4\textwidth}
@@ -352,7 +352,7 @@ This option shows to be completely ineffective. This can be due to the fact that
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% discuss data
 
-The objective of this test is to examine if is possible to lower the \texttt{medium attempts} score without penalizing heavily the \texttt{accuracy}. As shown in the table \ref{tab:minsim}, it is possible to do it gradually raising the minimum similarity threshold. With this data, the best performance is gained with a $0.8$ level (the accuracy decreases by 0.4 \% meanwhile the medium attempts pass from $1.8$ to $1.5$ and the percentage of correct predictions lifts to 48.0 \%).
+The objective of this test is to examine if it is possible to lower the \texttt{medium attempts} score without penalizing heavily the \texttt{accuracy}. As shown in the table \ref{tab:minsim}, it is possible to do it gradually raising the minimum similarity threshold. With this data, the best performance is gained with a $0.8$ level (the accuracy decreases by 0.4 \% meanwhile the medium attempts pass from $1.8$ to $1.5$ and the percentage of correct predictions lifts to 48.0 \%).
 
 The found optimum minimum similarity level is not suitable for each dataset: this meta-parameter could be over-fitted to the examples. However, this test can be interpreted as a proof of concept for testing the effectiveness of this approach.
 

@@ -93,15 +93,15 @@ As mentioned in section \ref{sec:cla_symp}, the relationships between every chil
 \section{Dataset}
 \label{sec:dataset}
 %TODO prima persona
-As mentioned in section \ref{datasetintro}, in order to create a suitable dataset for this project, the sentences extracted from a medical forum were linked to one or more symptoms. The used forum is \footnote{\url{https://www.doctorslounge.com/forums/}} \cite{doctorslounge} and classifies its posts by topic. The extraction and tagging process focused on six categories:
+As mentioned in section \ref{datasetintro}, in order to create a suitable dataset for this project, the sentences extracted from a medical forum were linked to one or more symptoms. The used forum is \footnote{\url{https://www.doctorslounge.com/forums/}} \cite{doctorslounge} and it classifies its posts by topic. The extraction and tagging process focused on six categories:
 \begin{enumerate}
-  \item chest
-  \item ear, nose and throat
-  \item eyes
-  \item gastroenteric symptoms
-  \item headaches
-  \item pediatric symptoms
-  \item back
+  \item chest;
+  \item ear, nose and throat;
+  \item eyes;
+  \item gastroenteric symptoms;
+  \item headaches;
+  \item pediatric symptoms;
+  \item back.
 \end{enumerate}
 
 Extrapolating a sentence within a post firstly means finding a passage in it which contains an identifiable and classifiable symptom and, secondly, tagging it with the relative CUI. The dataset's format is a \texttt{XML} with two types of tags: the \texttt{<sentence>} tag and the \texttt{<symptom>} tag, which has an attribute \texttt{CUI} used for linking the CUI to the symptom text.

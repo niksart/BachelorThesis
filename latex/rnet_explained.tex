@@ -2,7 +2,7 @@ This section will briefly outline R-NET, the other model used for Reading Compre
 
 R-NET is an end-to-end neural networks model for reading comprehension \cite{rnet}. It performs this task similarly to the way a human does: reading the passage (i.e. the patient's sentence) multiple times. Basically, R-NET tries to improve the passage representation step after step, which are in total three:
 \begin{enumerate}
-  \item \textit{Question and Passage GRU Layer}. In this layer tokens are converted in GloVe embeddings, and for out-of-vocabulary tokens a character embedding is computed. These vectors are not contextual: for this reason these embeddings are then fed to a BiRNN (composed by Gated Recurrent Units) in order to ameliorate these representations.
+  \item \textit{Question and Passage GRU Layer}. In this layer tokens are converted in GloVe embeddings, and for out-of-vocabulary tokens a character embedding is computed. These vectors are not contextual: for this reason these embeddings are then fed to a BiRNN (composed by Gated Recurrent Units \cite{gru}) in order to ameliorate these representations.
   \item \textit{Question and Passage Matching Layer}. The aim of this layer is to encode the question terms into the passage embeddings of the previous layer. In other words, this permits to the network, given a token in the passage, to focus only on the relevant tokens in the question and tune the passage embeddings to be more similar to the relevant question vectors. This is done using \textit{Attention}.
   
 In order to explain this concept, the example taken from \cite{understandingrnet} is reported.
@@ -31,7 +31,7 @@ In this case, \textit{making} embedding is adjusted in order to get it closer to
   
   Another difficulty resides in \textit{long-term dependencies}: \textit{ability}, for example, is far away from the subject to which the term is referred (Tesla's mother). However, GRU \cite{gru} were developed for addressing the problem of the \textit{vanishing gradients}, which is the reason why vanilla RNNs have troubles with long-term dependencies.
   
-  To resolve the former problem, R-NET introduces \textit{Self-Matched Attention}. While with simple Attention we use a passage term to weight a set of vectors (the question terms), with Self-Matched Attention R-NET use the current passage term to weigh tokens from the passage itself. This helps to make clearer the meaning between ambiguous terms.
+  To resolve the former problem, R-NET introduces \textit{Self-Matched Attention}. While with simple Attention a passage term is used to weight a set of vectors (the question terms), with Self-Matched Attention R-NET uses the current passage term to weigh tokens from the passage itself. This helps to make clearer the meaning between ambiguous terms.
 \end{enumerate}
 
 Having read and analyzed for three times the passage in the light of the question, the last layer is aimed to output the start and the end of the answer within the passage.

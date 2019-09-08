@@ -23,9 +23,9 @@ Considering BERT Base, the size taken in consideration for this project, the hid
 \subsubsection{Pre-training BERT}
 Briefly, pre-training BERT means training it on two tasks:
 \begin{itemize}
-  \item \textit{Masked Language Model} (MLM), often called \textit{Cloze task}. A bidirectional model like BERT is undoubtedly more powerful than a left-context model like the OpenAI GPT Transformer. But this type of model is even more difficult to train because a bidirectional conditional language model cannot be trained left-to-right or right-to-left, since this would allow each word to indirectly “see itself” during training.
+  \item \textit{Masked Language Model} (MLM), often called \textit{Cloze task}. A bidirectional model like BERT is undoubtedly more powerful than a left-context model like the OpenAI GPT Transformer. But this type of model is even more difficult to train because a bidirectional conditional language model cannot be trained left-to-right or right-to-left, since this would allow each word to indirectly ``see itself'' during training.
 
-  Thus, in order to train a bidirectional representation, the researchers simply mask some percentage of the input tokens at random (15\% in their experiments), and then predict those masked tokens. This means substitute a real token with a placeholder token \texttt{[MASK]}.
+  Thus, in order to train a bidirectional representation, the researchers simply mask some percentage of the input tokens at random (15\% in their experiments), and then predict those masked tokens. This means substituting a real token with a placeholder token \texttt{[MASK]}.
   
   \item \textit{Next Sentence Prediction} (NSP). This task is beneficial to many important downstream tasks like Question Answering and Natural Language Inference that are based on understanding the relation between two sentences, skill that is not captured by the previous task. Basically, it is a binary \textit{next sentence prediction}: when choosing the sentences \texttt{A} and \texttt{B} for the training, in the 50\% of the cases \texttt{B} is an actual next sentence of \texttt{A} (and it is labeled as \texttt{IsNext}) while in the other cases the choice of \texttt{B} is random between the sentences (labeled as \texttt{NotNext}).
 \end{itemize}

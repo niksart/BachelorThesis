@@ -77,8 +77,8 @@ The abstract component \textit{Symptom Classifier} is made up of two sub-compone
 \begin{itemize}
   \item a \textit{Vectorifier}. The purpose of this component is encoding a given sentence into an embedding which can be of two types:
   \begin{enumerate}
-    \item \textit{GloVe} embedding \cite{glove};
-    \item \textit{BERT} embedding;
+    \item \textit{GloVe} embeddings \cite{glove};
+    \item \textit{BERT} embeddings;
   \end{enumerate}
   \item a \textit{Symptom Tree Mapper}. The aim of this component is returning, given the embedding of a \textit{token for prediction}, the CUI of the most similar symptom. Similarity is a suitable measure because both the \textit{tokens for predictions} and each symptom name can be vectorized; thus, for both of them, an internal representation is available.
 \end{itemize}
