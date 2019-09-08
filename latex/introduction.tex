@@ -7,9 +7,9 @@ Physicians all over the world visit patients under time limitations. In addition
 
 \subsection{The anamnesis elicitation: a crucial but time-consuming task}
 
-The anamnesis of a patient is the information gained by a physician by asking specific questions whose answers may be useful in formulating a diagnosis\cite{historytakingwiki}. This task, often called in medical jargon “history taking”, requires a long procedure because the physician does not have only to interview the patient and gather information about the history of their problem, but even write down a brief summary of the conversation in the patient’s record. This necessary bureaucracy is demanding and risks becoming all-embracing. For example, a research group monitoring 57 physicians in the United States observed that during the clinic day, physicians spend 49.2\% of their clinical time on health records and desk work and only 27\% of their time with patients \cite{sinsky}. However, this task is fundamental: according to research, medical history provides in the 82.5\% of patients enough information to make an initial diagnosis of a disease \cite{hampton1975}.
+The anamnesis of a patient is the information gained by a physician by asking specific questions whose answers may be useful in formulating a diagnosis\cite{historytakingwiki}. This task, often called in medical jargon “history taking”, requires a long procedure because the physician does not have only to interview the patient and gather information about the history of their problem, but even write down a brief summary of the conversation in the patient’s record. This necessary bureaucracy is demanding and risks becoming all-embracing. For example, a research group monitoring 57 physicians in the United States observed that during the clinic day, physicians were spending 49.2\% of their clinical time on health records and desk work and only 27\% of their time with patients \cite{sinsky}. However, this task is fundamental: according to research, medical history provides in the 82.5\% of patients enough information to make an initial diagnosis of a disease \cite{hampton1975}.
 
-The traditional way of interviewing the patient is not only long and demanding, but even sometimes incomplete. For instance, 134 primary care physicians observed that only 59\% of essential history items were collected during history taking. The physicians were able to obtain relevant information about presenting symptoms and medications, but they often missed important information about related symptoms and medical history. This because a physician needs to remember a large number of questions and symptoms to have a complete and accurate history. Human memory is fallible and forgetting to ask some relevant questions during an interview might have a significant implication in patient management.\cite{johndocument}
+The traditional way of interviewing the patient is not only long and demanding, but even sometimes incomplete. For instance, 134 primary care physicians observed that, during the study, only 59\% of essential history items were collected during history taking. Physicians were able to obtain relevant information about presenting symptoms and medications, but they often missed important information about related symptoms and medical history. This because a physician needs to remember a large number of questions and symptoms to have a complete and accurate history. Human memory is fallible and forgetting to ask some relevant questions during an interview might have a significant implication in patient management.\cite{johndocument}
 
 \subsection{An alternative to the traditional anamnesis elicitation}
 
@@ -31,12 +31,12 @@ Identifying symptoms within a patient's sentence means finding, inside the text 
 \medskip
 \end{figure}
 \newpage
-These groups of words will then be mapped into precise symptoms contained in a symptom classification: they are named “tokens for predictions” (TFP for short).
+These groups of words will then be mapped into precise symptoms contained in a symptom classification: they are named \textit{tokens for predictions} (TFPs for short).
 
 \subsection{Classifying symptoms}
 \label{sec:cla_symp}
 
-Thus, the objective of the symptom classifier is to map correctly the previous \textit{tokens for predictions} into a list of specific symptoms. Each symptom inside the classification has an unique identifier called CUI (Concept Unique Identifier). The first character of a CUI is a \textit{C} followed by seven digits.
+Thus, the objective of the Symptom Classifier is to map correctly the previous \textit{tokens for predictions} into a list of specific symptoms. Each symptom inside the classification has an unique identifier called CUI (Concept Unique Identifier). The first character of a CUI is a \texttt{C} followed by seven digits.
 
 \begin{figure}[h]
 \centering
@@ -46,11 +46,11 @@ Thus, the objective of the symptom classifier is to map correctly the previous \
 \end{figure}
 
 \subsubsection{The MEDCIN symptom classification}
-MEDCIN is a medical terminology system developed by Medicomp Systems Inc. \cite{medcin}. It contains more than $300\,000$ clinical data elements encompassing symptoms, physical examinations, tests, diagnoses and therapies. What makes MEDCIN particularly fit for the purpose is its nature of being a \textit{point of care} terminology system. This means that MEDCIN is intended to help clinicians in documenting clinical information while interacting with patients. Therefore, MEDCIN includes all the symptom concepts that a physician may need when summarizing a patient's problem. In addition, another positive aspect stands in its hierarchical organization: the symptoms are structured in a tree, and each child of a node is in a \textit{is-a} relationship with its father.
+MEDCIN is a medical terminology system developed by Medicomp Systems Inc. \cite{medcin}. It contains more than $300\,000$ clinical data elements encompassing symptoms, physical examinations, tests, diagnoses and therapies. What makes MEDCIN particularly fit for the purpose of this work is its nature of being a \textit{point of care} terminology system. This means that MEDCIN is intended to help clinicians in documenting clinical information while interacting with patients. Therefore, MEDCIN includes all the symptom concepts that a physician may need when summarizing a patient's problem. In addition, another positive aspect stands in its hierarchical organization: the symptoms are structured in a tree, and each child of a node is in a \textit{is-a} relationship with its father.
 
 Although MEDCIN is copyrighted, it is inside the list of supported UMLS terminology systems. The Unified Medical Language System (UMLS) is a compendium of many controlled medical vocabularies and it is maintained by the US National Library of Medicine \cite{umls}. Academic users may access the UMLS free of charge for research purposes.
 
-Encompassing MEDCIN, UMLS provides a mapping structure between it and any other terminology system supported by UMLS. This is positive because the aforementioned CUIs are codes which are transversal to all the vocabularies inside the UMLS.
+Encompassing MEDCIN, UMLS provides a mapping structure between it and any other terminology system supported by UMLS. This is positive because CUIs are codes which are transversal to all the vocabularies inside the UMLS.
 
 \subsubsection{But why is  classifying symptoms necessary?}
 Find an appropriate mapping for a \textit{token for prediction} is not a trivial task, mainly because reality is not easily classifiable; natural language in particular. However, mapping symptoms to a classification is useful especially for improving the quality of the chatbot. This because the long-term objective is not to understand the presenting symptoms (physicians, and, generally, every human, are very good at it) but ask clever questions to the patient in order to extract missing symptoms and, in general, useful information for the diagnosis. This could be done asking questions about related symptoms or reviewing the body systems (Review of Systems (ROS) is normal practice in history taking). For these reasons, a mapping to a standard symptom classification is essential.
@@ -73,7 +73,7 @@ The abstract component \textit{Symptom Identifier} is made up of three sub-compo
 \end{itemize}
 
 \subsection*{Symptom classifier}
-The abstract component \textit{symptom classifier} is made up of two sub-components:
+The abstract component \textit{Symptom Classifier} is made up of two sub-components:
 \begin{itemize}
   \item a \textit{Vectorifier}. The purpose of this component is encoding a given sentence into an embedding which can be of two types:
   \begin{enumerate}
@@ -83,9 +83,9 @@ The abstract component \textit{symptom classifier} is made up of two sub-compone
   \item a \textit{Symptom Tree Mapper}. The aim of this component is returning, given the embedding of a \textit{token for prediction}, the CUI of the most similar symptom. Similarity is a suitable measure because both the \textit{tokens for predictions} and each symptom name can be vectorized; thus, for both of them, an internal representation is available.
 \end{itemize}
 
-\subsection*{The dataset}
+\subsection*{Dataset}
 \label{datasetintro}
-Up to now, there are not any suitable datasets for this project; therefore, for the purpose of this work, it proved necessary scraping and tagging $336$ sentences extracted from posts of a medical forum \footnote{\url{https://www.doctorslounge.com/forums/}} \cite{doctorslounge}. In section \ref{sec:dataset} is described the process that is followed in order to create this dataset.
+Up to now, there are not any suitable datasets for this project; therefore, for the purpose of this work, it proved necessary scraping and tagging $336$ sentences extracted from posts of a medical forum \footnote{\url{https://www.doctorslounge.com/forums/}} \cite{doctorslounge}. In section \ref{sec:dataset} is described the process that was followed in order to create this dataset.
 
 \section{Brief description of results}
 \label{sec:brief_results}

@@ -14,7 +14,7 @@ In order to evaluate the Symptom Identifier, the tokens for predictions of each 
 
 For each sentence, the number of symptoms present in the sentence but not in the tokens were counted: \texttt{missing tokens}.
 
-In order to choose the best model for future evaluations, a score metric that summarizes the performance of this component has been designed.\footnote{``\texttt{\#C}'' means ``total number of predictions belonging to the class \texttt{C}''}:
+In order to choose the best model for future evaluations, a score metric that summarizes the performance of this component has been designed.\footnote{``\texttt{\#C}'' means ``total number of predictions belonging to class \texttt{C}''}:
 \begin{equation}
 score = \texttt{\#correct} + 0 \cdot \texttt{\#redundant} - \texttt{\#non sense} - \texttt{\#wrong} - \texttt{\#missing}
 \end{equation}

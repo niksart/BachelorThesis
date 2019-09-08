@@ -1,7 +1,7 @@
 \begin{figure}[h]
 \centering
 \includegraphics[width=17cm]{methods_overview}
-\caption{Overview of methods}
+\caption{An illustrated overview of methods.}
 \medskip
 \end{figure}
 
@@ -30,12 +30,12 @@ The outcome of the \textit{Body Part Finder} is then passed to the \textit{QA sy
 The questions asked to the specified model over each sentence can be of two types:
 \begin{enumerate}
   \item generic question about the symptoms in the sentence: \textit{What are the symptoms?}
-  \item specific question about the problem of a found body part in the sentence: \textit{What is the problem with the }\texttt{[body part]}?
+  \item specific question about the problem of a found body part in the sentence: \textit{What is the problem with the }\texttt{[body part]}\textit{?}
 \end{enumerate}
 
 The question over the symptoms is intentionally generic because its scope is to catch the majority of the symptoms within the sentence. Thus, as shown in section \ref{sec:answer_interpreter}, the answer to this question must be interpreted.
 
-At the same time, the question over a body part is deliberately specific. The logic behind this question is that if a patient refers to a body part during the interview, can be the source of a problem.
+At the same time, the question over a body part is deliberately specific. The logic behind this question is that if a patient refers to a body part during the interview, it can be the source of a problem.
 
 Figure \ref{fig:qa} shows the whole component.
 \newpage
@@ -43,7 +43,7 @@ Figure \ref{fig:qa} shows the whole component.
 \begin{figure}[h]
 \centering
 \includegraphics[width=14cm]{qa_sys}
-\caption{The \textit{QA system} illustated.}
+\caption{The \textit{Question Answering System} illustated.}
 \medskip
 \label{fig:qa}
 \end{figure}
