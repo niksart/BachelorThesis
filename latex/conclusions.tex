@@ -12,12 +12,20 @@ However, the results are overall satisfactory because even using an extremely si
 The fact that these results depend strictly on the vector representations of symptoms shows that there is much scope for improvement. For example, a weakness of the vector representations of symptoms is that of being biased to the medical language (they were computed using concept names that are inside a medical classification). 
 
 \section{Further developments}
+
+\subsection*{Possible improvements}
 To improve the quality of the symptom representations can be worth to use, instead, the vectorization of symptom names expressed with the same language of a common patient. This could be useful in order to move closer linguistically and semantically to the problem that the patient wants to express.
 
 A more radical modification of the last idea (but extremely difficult to realize) is that of creating a patient level classification of symptoms (independent from any language) and associating to each concept in this classification a list of expressions, which are the synonyms of the concept. For doing so it is necessary to collect a large quantity of patient's sentences, study how they express their problems and what is their common knowledge (and choose, of course, what is common knowledge and what is not).
 
 % use contextual embeddings
-Another possible future improvement could be the adoption of contextual embeddings. BERT embeddings are contextual; however, they did not outperform GloVe because they are not fine-tuned to a specific domain.
+In order to address the problem of word sense disambiguation is possible to adopt contextual embeddings. BERT embeddings are contextual; however, they did not outperform GloVe because they are not fine-tuned to a specific domain.
+
+\subsection*{Future applications}
+As mentioned in section \ref{sub:whyclassifying}, this work can be considered as a basis for a future component aimed at finding related symptoms and asking questions about them. This can be done because the component discussed in this work maps the symptoms present in the sentence towards a standard classification, enabling future components to use different symptoms representations.
+
+A possible approach consists in using \texttt{cui2vec} \cite{cui2vec}, a new set of embeddings for medical concepts learned using a large collection of multimodal medical data. These internal representations cover the majority of the UMLS concepts and can be used for finding related symptoms: for example, using them as inputs for a clustering algorithm.
+
 
 % Last improvement...
 % use compositional syntax

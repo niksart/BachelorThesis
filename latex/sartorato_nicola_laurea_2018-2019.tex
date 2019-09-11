@@ -11,7 +11,7 @@
 % pdflatex nome_file.tex
 % pdflatex nome_file.tex
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % formato FRONTE RETRO
 \documentclass[epsfig,a4paper,11pt,titlepage,twoside,openany]{book}
@@ -27,6 +27,8 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+
+\usepackage{booktabs}
 
 \usepackage{array}
 \usepackage{makecell}
@@ -81,7 +83,7 @@
       % sommario
       % \input{abstract}  
       
-      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       % lista dei capitoli
       %
       % \input oppure \include
@@ -90,6 +92,7 @@
       \newpage
       \input{introduction}
       
+      \newpage
       \input{methods}
       
       \newpage

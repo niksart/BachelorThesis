@@ -6,7 +6,7 @@ The first aim of this component is encoding a sentence in a vector. The supporte
   
   On the contrary, GloVe tries both to capture meaning in vector space (like word2vec) and to use global count statistics instead of only local information. GloVe learns word embeddings using a co-occurrence matrix, taking in consideration only nonzero elements.
   
-  The supported dimensions of GloVe embeddings are: 50, 100, 200, 300.
+  For the purpose of this work GloVe pretrained embeddings were used. Their dimensions are: 50, 100, 200, 300.
 \end{itemize}
 
 In order to find a GloVe representative embedding of a sentence, a mean between the vectorized words in the sentence was done. Not all the words can be vectorified (some of them might be out-of-vocabulary): for this reason the mean takes in consideration only the vectorizable words in the sentence. In order to limit the number of out-of-vocabulary words, a large number of GloVe embeddings ($100\,000$) was imported.
